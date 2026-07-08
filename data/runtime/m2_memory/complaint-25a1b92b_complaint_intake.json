@@ -1,0 +1,119 @@
+{
+  "raw_complaint": "Patient reported device stopped during surgery. Battery indicator showed 40.",
+  "device_id": "DEV-PULSE-OX",
+  "regulatory_framework": "FDA_21_CFR_820",
+  "structured_complaint": {
+    "device_id": "DEV-PULSE-OX",
+    "severity": "Critical",
+    "symptom_codes": [
+      "BATTERY_DRAIN",
+      "REBOOT"
+    ],
+    "affected_component": "COMP-BATTERY",
+    "timeline": "acute event",
+    "raw_summary": "Patient reported device stopped during surgery. Battery indicator showed 40."
+  },
+  "similar_incidents": [
+    {
+      "id": "CMP-015",
+      "score": 1,
+      "date": "2026-04-18",
+      "description": "Support ticket indicates unexpected reboot during charging.",
+      "severity": "Low",
+      "status": "Open"
+    }
+  ],
+  "graph_context": {
+    "device": {
+      "id": "DEV-PULSE-OX",
+      "current_firmware": "v3.4",
+      "device_class": "Class II",
+      "model": "PULSE-OXIMETER",
+      "name": "Pulse Oximeter",
+      "nomenclature_code": "Pulse oximeter / generic device",
+      "status": "Demo Active"
+    },
+    "components": [
+      {
+        "id": "COMP-BATTERY",
+        "name": "Battery Pack",
+        "part_type": "Power",
+        "supplier_id": "SUP-003"
+      },
+      {
+        "id": "COMP-FIRMWARE",
+        "name": "Measurement Firmware",
+        "part_type": "Software",
+        "supplier_id": "SUP-004"
+      },
+      {
+        "id": "COMP-MCU",
+        "name": "Microcontroller",
+        "part_type": "Electronics",
+        "supplier_id": "SUP-002"
+      },
+      {
+        "id": "COMP-SENSOR",
+        "name": "Optical Sensor",
+        "part_type": "Sensor",
+        "supplier_id": "SUP-001"
+      }
+    ],
+    "firmware_versions": [
+      {
+        "id": "FW-v2.1",
+        "change_summary": "Baseline release used by stale evidence",
+        "release_date": "2026-06-01",
+        "version": "v2.1"
+      },
+      {
+        "id": "FW-v3.4",
+        "change_summary": "Current release under audit",
+        "release_date": "2026-06-01",
+        "version": "v3.4"
+      },
+      {
+        "id": "FW-v3.5",
+        "change_summary": "M2 trace decay analysis",
+        "release_date": "2026-06-25",
+        "version": "v3.5"
+      }
+    ],
+    "node_count": 168,
+    "edge_count": 256
+  },
+  "hypotheses": [],
+  "evidence_collected": [],
+  "risk_assessment": null,
+  "capa_sections": [],
+  "capa_draft": "",
+  "audit_findings": [],
+  "trace_decay_alerts": [],
+  "status": "complaint_structured",
+  "errors": [],
+  "trace": [
+    {
+      "timestamp": "2026-06-25T12:11:33.720749Z",
+      "agent": "supervisor",
+      "action": "route to complaint_intake",
+      "status": "info",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-06-25T12:11:33.720749Z",
+      "agent": "complaint_intake",
+      "action": "extract structured complaint",
+      "status": "started",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-06-25T12:11:33.731749Z",
+      "agent": "complaint_intake",
+      "action": "extract structured complaint",
+      "status": "completed",
+      "data": {
+        "elapsed_ms": 10.61
+      }
+    }
+  ]
+}

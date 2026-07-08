@@ -1,0 +1,146 @@
+{
+  "version": "2026-07-04",
+  "description": "Editable reference examples for Complaint Intake symptom classification. These examples are embedded and compared with incoming complaint text before any LLM fallback is used.",
+  "categories": [
+    {
+      "code": "SYMPTOM_STUCK_READING",
+      "description": "The displayed or calculated clinical value is static, repeating, frozen at a prior value, or not changing when the patient condition changes.",
+      "examples": [
+        "The oxygen saturation value stayed at the exact same number for the entire observation.",
+        "The displayed pulse and SpO2 values appear frozen on the previous measurement.",
+        "The monitor keeps repeating the old reading instead of changing with the patient.",
+        "The numeric vitals are locked at one value even after the probe is moved.",
+        "The reading remains fixed at 98 percent and never varies during monitoring.",
+        "The same measurement is shown over multiple checks with no visible change.",
+        "The pulse oximeter repeats an earlier value instead of producing a fresh measurement.",
+        "The measurement value is stuck and does not respond to signal changes."
+      ]
+    },
+    {
+      "code": "SYMPTOM_NOT_UPDATING",
+      "description": "The measurement, display, or sampling loop is stale, delayed, or no longer refreshing from a live source.",
+      "examples": [
+        "The screen still shows an old value after the sensor condition changes.",
+        "The measurement page is stale and does not refresh during monitoring.",
+        "Updated vitals are not pushed to the display after a new sample is taken.",
+        "The display lags behind the live sensor output for several minutes.",
+        "The data refresh appears stopped even though the device remains powered.",
+        "The reading update loop seems stalled after continuous use.",
+        "New pulse data is collected but the shown value is not refreshed.",
+        "The displayed measurement does not update after reconnecting the probe."
+      ]
+    },
+    {
+      "code": "SYMPTOM_INACCURATE",
+      "description": "The device provides a value, but the value appears wrong, clinically implausible, offset, drifting, or inconsistent with a trusted reference.",
+      "examples": [
+        "The SpO2 value is much higher than the hospital reference monitor.",
+        "The pulse reading is far below the manually counted pulse rate.",
+        "The oxygen saturation number is clearly incorrect for the patient's condition.",
+        "The device reports an impossible measurement while the patient is stable.",
+        "The displayed reading drifts away from the calibrated reference device.",
+        "The pulse oximeter gives unreliable values during normal use.",
+        "The SpO2 output is lower than expected when checked against another monitor.",
+        "The numeric reading appears offset from the actual clinical measurement."
+      ]
+    },
+    {
+      "code": "SYMPTOM_MISSING",
+      "description": "The primary clinical reading, signal, value, or waveform is absent, blank, not detected, unavailable, or not displayed at all.",
+      "examples": [
+        "No oxygen saturation number is visible on the device.",
+        "The SpO2 field is empty and never shows a measured value.",
+        "The pulse value does not appear anywhere on the screen.",
+        "The monitor shows dashes instead of a clinical reading.",
+        "The device cannot obtain a pulse signal from the connected probe.",
+        "The measurement area is blank even though monitoring has started.",
+        "The oximeter does not display a saturation value for the patient.",
+        "The clinical reading is unavailable and the screen shows no number."
+      ]
+    },
+    {
+      "code": "SYMPTOM_DISPLAY_BLACK",
+      "description": "The screen or display is black, blank, dark, unlit, or visually unavailable.",
+      "examples": [
+        "The screen goes completely black during use.",
+        "The display is dark even though the device seems powered.",
+        "The user interface is not visible because the backlight is off.",
+        "The monitor face is blank with no visible screen content.",
+        "The screen remains black after the device is turned on.",
+        "The display panel loses all visible output.",
+        "The device lights are on but the screen itself is blank.",
+        "The screen is fully dark and cannot be read."
+      ]
+    },
+    {
+      "code": "SYMPTOM_DISPLAY_FLICKER",
+      "description": "The display flickers, flashes, tears, shows artifacts, or has unstable visual output while still visible.",
+      "examples": [
+        "The screen flickers whenever the device is monitoring.",
+        "The display flashes rapidly and makes the numbers hard to read.",
+        "The user interface shows visual artifacts across the measurement page.",
+        "The screen brightness pulses irregularly during operation.",
+        "The display image tears and the reading is difficult to see.",
+        "The panel intermittently blinks while values are shown.",
+        "The numeric display jitters on the screen.",
+        "The device screen has garbled visual output."
+      ]
+    },
+    {
+      "code": "SYMPTOM_DISPLAY_FREEZE",
+      "description": "The display or user interface freezes, stops responding, or remains stuck on a visual screen state.",
+      "examples": [
+        "The user interface freezes after the measurement page opens.",
+        "The screen stops responding and stays on the same menu.",
+        "The display becomes frozen after a software update.",
+        "The device is powered but the visible screen state is locked.",
+        "The touchscreen page stops moving and no controls respond.",
+        "The display freezes while the device continues running.",
+        "The interface is stuck on the startup screen.",
+        "The screen locks up and cannot be navigated."
+      ]
+    },
+    {
+      "code": "SYMPTOM_ALARM_DELAY",
+      "description": "An alarm, alert, or notification is delayed, late, absent for too long, or delivered after the expected clinical trigger.",
+      "examples": [
+        "The low saturation alarm sounded several seconds late.",
+        "The notification was delayed after the patient crossed the alarm limit.",
+        "The alert did not arrive promptly during monitoring.",
+        "The alarm response lagged behind the displayed vital sign change.",
+        "The caregiver warning came after the event had already occurred.",
+        "The device waited too long before raising an alert.",
+        "Alarm notification latency was longer than expected.",
+        "The warning tone was late when oxygen saturation dropped."
+      ]
+    },
+    {
+      "code": "SYMPTOM_POWER_FAILURE",
+      "description": "The device shuts down, restarts, loses power, fails to power on, or has battery or charging failure behavior.",
+      "examples": [
+        "The device shuts down during patient monitoring.",
+        "The unit restarts by itself after a few minutes of use.",
+        "The pulse oximeter loses power even with battery charge remaining.",
+        "The device will not turn on after charging overnight.",
+        "The battery drains suddenly during normal operation.",
+        "Power is lost when the probe is connected.",
+        "The device cycles off and on without user input.",
+        "The charging indicator appears but the unit does not start."
+      ]
+    },
+    {
+      "code": "SYMPTOM_PHYSICAL_DAMAGE",
+      "description": "The complaint involves drop, impact, cracked housing, broken parts, connector damage, liquid ingress, or other physical damage.",
+      "examples": [
+        "The device stopped working after it was dropped from the bed rail.",
+        "The housing cracked near the probe connector.",
+        "The unit was damaged after an accidental impact.",
+        "The display cover broke after the device fell onto the floor.",
+        "The probe port is loose after rough handling.",
+        "The casing is split and the device no longer reads correctly.",
+        "Liquid entered the unit and the controls became unreliable.",
+        "The device has visible damage after transport."
+      ]
+    }
+  ]
+}

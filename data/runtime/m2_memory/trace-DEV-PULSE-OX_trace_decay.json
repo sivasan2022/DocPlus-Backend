@@ -1,0 +1,819 @@
+{
+  "raw_complaint": "",
+  "device_id": "DEV-PULSE-OX",
+  "complaint_firmware_version": "",
+  "serial_number": "",
+  "lot": "",
+  "regulatory_framework": "AUTO",
+  "regulatory_label": "",
+  "structured_complaint": null,
+  "similar_incidents": [],
+  "graph_context": {},
+  "hypotheses": [],
+  "evidence_collected": [],
+  "risk_assessment": null,
+  "capa_sections": [],
+  "capa_draft": "",
+  "investigation_scope": {},
+  "audit_findings": [],
+  "trace_decay_alerts": [
+    {
+      "requirement_id": "REQ-ALRM-051",
+      "test_id": "TC-ALRM-051",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-CONN-074",
+      "test_id": "TC-CONN-074",
+      "tested_firmware": "v2.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-015",
+      "test_id": "TC-DISP-015",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-043",
+      "test_id": "TC-SENS-043",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-FWID-078",
+      "test_id": "TC-FWID-078",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-062",
+      "test_id": "TC-DATA-062",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-055",
+      "test_id": "TC-ALRM-055",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-016",
+      "test_id": "TC-DISP-016",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-010",
+      "test_id": "TC-PWR-010",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-049",
+      "test_id": "TC-SENS-049",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-004",
+      "test_id": "TC-PWR-004",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-031",
+      "test_id": "TC-MEAS-031",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-014",
+      "test_id": "TC-DISP-014",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-067",
+      "test_id": "TC-DATA-067",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-060",
+      "test_id": "TC-ALRM-060",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-CONN-071",
+      "test_id": "TC-CONN-071",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-036",
+      "test_id": "TC-MEAS-036",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-054",
+      "test_id": "TC-ALRM-054",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-042",
+      "test_id": "TC-SENS-042",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-009",
+      "test_id": "TC-PWR-009",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-057",
+      "test_id": "TC-ALRM-057",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-058",
+      "test_id": "TC-ALRM-058",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-018",
+      "test_id": "TC-DISP-018",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-030",
+      "test_id": "TC-MEAS-030",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-032",
+      "test_id": "TC-MEAS-032",
+      "tested_firmware": "v3.4.2",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-041",
+      "test_id": "TC-MEAS-041",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-002",
+      "test_id": "TC-PWR-002",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-091",
+      "test_id": "TC-USE-091",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-021",
+      "test_id": "TC-MEAS-021",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-038",
+      "test_id": "TC-MEAS-038",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-CONN-073",
+      "test_id": "TC-CONN-073",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-025",
+      "test_id": "TC-MEAS-025",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-022",
+      "test_id": "TC-MEAS-022",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-064",
+      "test_id": "TC-DATA-064",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-085",
+      "test_id": "TC-SYS-085",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-096",
+      "test_id": "TC-USE-096",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-CONN-075",
+      "test_id": "TC-CONN-075",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-045",
+      "test_id": "TC-SENS-045",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-FWID-076",
+      "test_id": "TC-FWID-076",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-084",
+      "test_id": "TC-SYS-084",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-003",
+      "test_id": "TC-PWR-003",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-008",
+      "test_id": "TC-PWR-008",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-056",
+      "test_id": "TC-ALRM-056",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-059",
+      "test_id": "TC-ALRM-059",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-069",
+      "test_id": "TC-DATA-069",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-052",
+      "test_id": "TC-ALRM-052",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-039",
+      "test_id": "TC-MEAS-039",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-FWID-081",
+      "test_id": "TC-FWID-081",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-017",
+      "test_id": "TC-DISP-017",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-094",
+      "test_id": "TC-USE-094",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-040",
+      "test_id": "TC-MEAS-040",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-046",
+      "test_id": "TC-SENS-046",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-048",
+      "test_id": "TC-SENS-048",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-020",
+      "test_id": "TC-DISP-020",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-088",
+      "test_id": "TC-SYS-088",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-035",
+      "test_id": "TC-MEAS-035",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-006",
+      "test_id": "TC-PWR-006",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-024",
+      "test_id": "TC-MEAS-024",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-089",
+      "test_id": "TC-SYS-089",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-083",
+      "test_id": "TC-SYS-083",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-100",
+      "test_id": "TC-USE-100",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-029",
+      "test_id": "TC-MEAS-029",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-007",
+      "test_id": "TC-PWR-007",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-FWID-077",
+      "test_id": "TC-FWID-077",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-092",
+      "test_id": "TC-USE-092",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-026",
+      "test_id": "TC-MEAS-026",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-013",
+      "test_id": "TC-DISP-013",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-095",
+      "test_id": "TC-USE-095",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-082",
+      "test_id": "TC-SYS-082",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-027",
+      "test_id": "TC-MEAS-027",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-FWID-080",
+      "test_id": "TC-FWID-080",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-011",
+      "test_id": "TC-DISP-011",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-CONN-072",
+      "test_id": "TC-CONN-072",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-068",
+      "test_id": "TC-DATA-068",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-047",
+      "test_id": "TC-SENS-047",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-098",
+      "test_id": "TC-USE-098",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-061",
+      "test_id": "TC-DATA-061",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-097",
+      "test_id": "TC-USE-097",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-063",
+      "test_id": "TC-DATA-063",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-090",
+      "test_id": "TC-SYS-090",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-019",
+      "test_id": "TC-DISP-019",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DISP-012",
+      "test_id": "TC-DISP-012",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-050",
+      "test_id": "TC-SENS-050",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-023",
+      "test_id": "TC-MEAS-023",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-033",
+      "test_id": "TC-MEAS-033",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-037",
+      "test_id": "TC-MEAS-037",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-099",
+      "test_id": "TC-USE-099",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-CONN-070",
+      "test_id": "TC-CONN-070",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SENS-044",
+      "test_id": "TC-SENS-044",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-028",
+      "test_id": "TC-MEAS-028",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-001",
+      "test_id": "TC-PWR-001",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-USE-093",
+      "test_id": "TC-USE-093",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-FWID-079",
+      "test_id": "TC-FWID-079",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-086",
+      "test_id": "TC-SYS-086",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-ALRM-053",
+      "test_id": "TC-ALRM-053",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-065",
+      "test_id": "TC-DATA-065",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-PWR-005",
+      "test_id": "TC-PWR-005",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-MEAS-034",
+      "test_id": "TC-MEAS-034",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-DATA-066",
+      "test_id": "TC-DATA-066",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    },
+    {
+      "requirement_id": "REQ-SYS-087",
+      "test_id": "TC-SYS-087",
+      "tested_firmware": "v3.4",
+      "required_firmware": "v3.5",
+      "reason": "Test evidence does not match the proposed firmware."
+    }
+  ],
+  "ai_reasoning": {
+    "trace_decay": {
+      "impact_summary": "Trace Decay found 100 potentially stale verification artifact(s) after the proposed change.",
+      "release_gate_recommendation": "Hold release until impacted tests are refreshed or equivalence is approved.",
+      "member_handoff": {
+        "M1": "Keep the knowledge graph, evidence freshness, and traceability matrix current.",
+        "M2": "Use this structured reasoning result for agent state, CAPA, audit, and trace-decay handoff.",
+        "M3": "Render summary, risk, CAPA, and evidence citations in the dashboard.",
+        "M4": "Use retrieved evidence snippets/citations as the grounded RAG context.",
+        "M5": "Use the final structured fields for integration, demo scripts, and report export."
+      },
+      "confidence": 0.74,
+      "enabled": false,
+      "mode": "off",
+      "task": "trace_decay_final_reasoning",
+      "source": "deterministic_fallback",
+      "fallback_reason": "OpenAI is disabled or unavailable."
+    }
+  },
+  "status": "trace_decay_checked",
+  "errors": [],
+  "trace": [
+    {
+      "timestamp": "2026-07-01T14:49:03.184936Z",
+      "agent": "langgraph_supervisor",
+      "action": "route to trace_decay",
+      "status": "info",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-07-01T14:49:03.184936Z",
+      "agent": "trace_decay",
+      "action": "detect trace decay",
+      "status": "started",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-07-01T14:49:16.579941Z",
+      "agent": "trace_decay",
+      "action": "trace decay summary",
+      "status": "info",
+      "data": {
+        "stale_test_count": 100,
+        "new_firmware": "v3.5",
+        "changed_components": [
+          "COMP-ALARM",
+          "COMP-ALARM-MANAGER",
+          "COMP-BATTERY",
+          "COMP-CONNECTIVITY",
+          "COMP-DATA-STORAGE",
+          "COMP-DISPLAY-UI",
+          "COMP-FIRMWARE",
+          "COMP-FIRMWARE-UPDATE",
+          "COMP-MCU",
+          "COMP-MEASUREMENT",
+          "COMP-MECHANICAL-HF",
+          "COMP-OPTICAL-SENSOR",
+          "COMP-POWER-BATTERY",
+          "COMP-SENSOR",
+          "COMP-SYSTEM"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-01T14:49:16.579941Z",
+      "agent": "trace_decay",
+      "action": "detect trace decay",
+      "status": "completed",
+      "data": {
+        "elapsed_ms": 13395.46
+      }
+    },
+    {
+      "timestamp": "2026-07-01T14:49:16.581260Z",
+      "agent": "openai_reasoning",
+      "action": "final trace_decay reasoning",
+      "status": "started",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-07-01T14:49:16.581260Z",
+      "agent": "openai_reasoning",
+      "action": "OpenAI reasoning disabled",
+      "status": "info",
+      "data": {
+        "mode": "off"
+      }
+    },
+    {
+      "timestamp": "2026-07-01T14:49:16.581260Z",
+      "agent": "openai_reasoning",
+      "action": "final trace_decay reasoning",
+      "status": "completed",
+      "data": {
+        "elapsed_ms": 0.06
+      }
+    }
+  ]
+}

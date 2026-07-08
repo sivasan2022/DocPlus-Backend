@@ -1,0 +1,3059 @@
+{
+  "raw_complaint": "Patient reported device stopped during surgery. Battery indicator showed 40.",
+  "device_id": "DEV-PULSE-OX",
+  "regulatory_framework": "FDA_21_CFR_820",
+  "structured_complaint": {
+    "device_id": "DEV-PULSE-OX",
+    "severity": "Critical",
+    "symptom_codes": [
+      "BATTERY_DRAIN",
+      "REBOOT"
+    ],
+    "affected_component": "COMP-BATTERY",
+    "timeline": "acute event",
+    "raw_summary": "Patient reported device stopped during surgery. Battery indicator showed 40."
+  },
+  "similar_incidents": [
+    {
+      "id": "CMP-015",
+      "score": 1,
+      "date": "2026-04-18",
+      "description": "Support ticket indicates unexpected reboot during charging.",
+      "severity": "Low",
+      "status": "Open"
+    }
+  ],
+  "graph_context": {
+    "device": {
+      "id": "DEV-PULSE-OX",
+      "current_firmware": "v3.4",
+      "device_class": "Class II",
+      "model": "PULSE-OXIMETER",
+      "name": "Pulse Oximeter",
+      "nomenclature_code": "Pulse oximeter / generic device",
+      "status": "Demo Active"
+    },
+    "components": [
+      {
+        "id": "COMP-BATTERY",
+        "name": "Battery Pack",
+        "part_type": "Power",
+        "supplier_id": "SUP-003"
+      },
+      {
+        "id": "COMP-FIRMWARE",
+        "name": "Measurement Firmware",
+        "part_type": "Software",
+        "supplier_id": "SUP-004"
+      },
+      {
+        "id": "COMP-MCU",
+        "name": "Microcontroller",
+        "part_type": "Electronics",
+        "supplier_id": "SUP-002"
+      },
+      {
+        "id": "COMP-SENSOR",
+        "name": "Optical Sensor",
+        "part_type": "Sensor",
+        "supplier_id": "SUP-001"
+      }
+    ],
+    "firmware_versions": [
+      {
+        "id": "FW-v2.1",
+        "change_summary": "Baseline release used by stale evidence",
+        "release_date": "2026-06-01",
+        "version": "v2.1"
+      },
+      {
+        "id": "FW-v3.4",
+        "change_summary": "Current release under audit",
+        "release_date": "2026-06-01",
+        "version": "v3.4"
+      },
+      {
+        "id": "FW-v3.5",
+        "change_summary": "Final verification firmware update",
+        "release_date": "2026-06-25",
+        "version": "v3.5"
+      }
+    ],
+    "node_count": 168,
+    "edge_count": 256,
+    "affected_component_neighborhood": {
+      "nodes": [
+        {
+          "id": "CMP-001",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-02-04",
+            "description": "Patient reported intermittent low SpO2 readings during home monitoring.",
+            "severity": "Medium",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-002",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-03-05",
+            "description": "Clinician observed probe disconnect warning did not appear immediately.",
+            "severity": "High",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-003",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-04-06",
+            "description": "Battery indicator dropped rapidly during extended monitoring.",
+            "severity": "Low",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-004",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-05-07",
+            "description": "Pulse rate display froze until the sensor was reconnected.",
+            "severity": "Medium",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-005",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-06-08",
+            "description": "Alarm sounded late during simulated desaturation.",
+            "severity": "High",
+            "status": "Open"
+          }
+        },
+        {
+          "id": "CMP-006",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-01-09",
+            "description": "User reported confusion between perfusion indicator and battery icon.",
+            "severity": "Low",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-007",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-02-10",
+            "description": "Device returned after post-market recall communication.",
+            "severity": "Medium",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-008",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-03-11",
+            "description": "Field report indicates inconsistent readings in low temperature environment.",
+            "severity": "High",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-009",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-04-12",
+            "description": "Customer reported app pairing failure after firmware update.",
+            "severity": "Low",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-010",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-05-13",
+            "description": "Complaint references suspected sensor cable degradation.",
+            "severity": "Medium",
+            "status": "Open"
+          }
+        },
+        {
+          "id": "CMP-011",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-06-14",
+            "description": "Distributor noted repeated false low saturation alerts.",
+            "severity": "High",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-012",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-01-15",
+            "description": "MAUDE-style adverse event record linked to pulse oximeter use.",
+            "severity": "Low",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-013",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-02-16",
+            "description": "Recall search result references possible measurement inaccuracy.",
+            "severity": "Medium",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-014",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-03-17",
+            "description": "Healthcare professional noted limitations in darker skin pigmentation cohorts.",
+            "severity": "High",
+            "status": "Closed"
+          }
+        },
+        {
+          "id": "CMP-015",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-04-18",
+            "description": "Support ticket indicates unexpected reboot during charging.",
+            "severity": "Low",
+            "status": "Open"
+          }
+        },
+        {
+          "id": "CMP-REAL-001",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-06-11",
+            "description": "FDA Executive Summary Review of Pulse Oximeters and Factors that can Impact their Accuracy Prepared for the November 1, 2022, meeting of the Anesthesiology Devices Advisory Committee Center for Devices and Radiological Health (CDRH) United States Food and Drug Administration i Contents I.",
+            "severity": "Medium",
+            "status": "Closed",
+            "vector_ref_id": "EVID-4065a8d6154b"
+          }
+        },
+        {
+          "id": "CMP-REAL-002",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-06-11",
+            "description": "Class 2 Device Recall Pulse Oximeter Quick Links: Skip to main page content Skip to Search Skip to Topics Menu Skip to Common Links U.S.",
+            "severity": "High",
+            "status": "Closed",
+            "vector_ref_id": "EVID-8765b82dd59e"
+          }
+        },
+        {
+          "id": "CMP-REAL-003",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-06-11",
+            "description": "MAUDE Adverse Event Report:; PULSE OXIMETER Quick Links: Skip to main page content Skip to Search Skip to Topics Menu Skip to Common Links U.S.",
+            "severity": "Medium",
+            "status": "Open",
+            "vector_ref_id": "EVID-c40f8cf7e07b"
+          }
+        },
+        {
+          "id": "CMP-REAL-004",
+          "labels": [
+            "Complaint"
+          ],
+          "properties": {
+            "date": "2026-06-11",
+            "description": "MDR Database Search Quick Links: Skip to main page content Skip to Search Skip to Topics Menu Skip to Common Links U.S.",
+            "severity": "Medium",
+            "status": "Closed",
+            "vector_ref_id": "EVID-c55113260c0f"
+          }
+        },
+        {
+          "id": "COMP-BATTERY",
+          "labels": [
+            "Component"
+          ],
+          "properties": {
+            "name": "Battery Pack",
+            "part_type": "Power",
+            "supplier_id": "SUP-003"
+          }
+        },
+        {
+          "id": "COMP-FIRMWARE",
+          "labels": [
+            "Component"
+          ],
+          "properties": {
+            "name": "Measurement Firmware",
+            "part_type": "Software",
+            "supplier_id": "SUP-004"
+          }
+        },
+        {
+          "id": "COMP-MCU",
+          "labels": [
+            "Component"
+          ],
+          "properties": {
+            "name": "Microcontroller",
+            "part_type": "Electronics",
+            "supplier_id": "SUP-002"
+          }
+        },
+        {
+          "id": "COMP-SENSOR",
+          "labels": [
+            "Component"
+          ],
+          "properties": {
+            "name": "Optical Sensor",
+            "part_type": "Sensor",
+            "supplier_id": "SUP-001"
+          }
+        },
+        {
+          "id": "CVE-2026-DEMO",
+          "labels": [
+            "CVE"
+          ],
+          "properties": {
+            "affected_component": "OpenSSL",
+            "cve_id": "CVE-2026-DEMO",
+            "severity": "Medium"
+          }
+        },
+        {
+          "id": "DEV-PULSE-OX",
+          "labels": [
+            "Device"
+          ],
+          "properties": {
+            "current_firmware": "v3.4",
+            "device_class": "Class II",
+            "model": "PULSE-OXIMETER",
+            "name": "Pulse Oximeter",
+            "nomenclature_code": "Pulse oximeter / generic device",
+            "status": "Demo Active"
+          }
+        },
+        {
+          "id": "EVID-04dc30511e98",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "risk",
+            "confidence_score": 0.86,
+            "content_hash": "04dc30511e98",
+            "extension": ".html",
+            "snippet": "Pulse oximetry in primary care: factors affecting accuracy and interpretation - PMC Skip to main content An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Search Log in Dashboard Publications Account settings Log out Search… Search NCBI Primary site navigation Search Logged in as: Dashboard Publications Account settings Log in Search PMC Full-Text Archive Search in PMC Journal List User Guide View on publisher site Download PDF Add to Collections Cite Permalink PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in ",
+            "source_path": "Pulse Oximeter/Risk Management/Pulse oximetry in primary care_ factors affecting accuracy and interpretation - PMC.html",
+            "title": "Pulse oximetry in primary care  factors affecting accuracy and interpretation   PMC"
+          }
+        },
+        {
+          "id": "EVID-19228c768e2e",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "19228c768e2e",
+            "extension": ".pdf",
+            "snippet": "Pulse Oximeter Demo Features:  This kit demonstrates the measurement of pulse and blood oxygen saturation using Microchip parts. Sales Demo Manual Document Updated: 12/21/2012 Pulse Oximeter Demo Testing Log Each kit is tested by both the responsible engineer and our task force. Below lists the details of tests and inspections: Date Tester Name Dept Comments/Issues Found Passed? 12/20/2012 Zhang (Kevin) Feng MPG Yes Pulse Oximeter Demo Table of Contents Content List: Unpacking, what’s in the box? .............................................................. 1-1 Overview: What the demo kit showcases .................................................................... 2-1 Quick Start: Follow these instructions to get the demo running quickly ...................... 3-1 Demo 1: Description of the first demo that can be completed with this unit. ................ 4-1 Demo 2: Description of t",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Demo Instructions.pdf",
+            "title": "Pulse Oximeter Demo Instructions"
+          }
+        },
+        {
+          "id": "EVID-19772a689e69",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "19772a689e69",
+            "extension": ".pdf",
+            "snippet": "4 1 1 5 1 3 2 2 5 3 4 2 5 6 2 4 1 5 1 12 1 1 43 1 876 1 11109 1 1 1 1413 16 1 3 4 611 6 9 67 1 10 1 3 1252 15 1 8 2 1 2 1 2 C C 2 1 2 1 2 1 2 43 1 2 1 2 1 987 2 1 2 16 13 2 1 17 12 19 10 20 9 22 7 24 5 25 4 27 2 28 1 1 1 8 56 234 1 1 1 2 1 1 12 B E 4 5 2 1 2 2 11 B E 7 6 10 9 2 2 1 2 12 6 2 4 1 1 3 2 12 12 2 2 12 1 2 1 2 106 2 1 2 21 3 1 1 22 8 1 1 1815 1114 1 1 2 2321 68 26 3 2 1 2 5 2 7 2 15 1 1 2 PABT101 PABT102 COBT1 PAC101PAC102 COC1 PAC201PAC202 COC2 PAC301 PAC302 COC3 PAC401 PAC402 COC4 PAC501 PAC502 COC5PAC601PAC602COC6 PAC701 PAC702 COC7 PAC801 PAC802 COC8 PAC901 PAC902COC9 PAC1002 PAC1001 COC10 PAC1102 PAC1101 COC11 PAC1202 PAC1201 COC12 PAC1301 PAC1302COC13 PAC1401 PAC1402 COC14 PAC1501PAC1502COC15 PAC1601PAC1602 COC16 PAC1701PAC1702COC17 PAC1801PAC1802 COC18 PAJ1011 PAJ1010 PAJ101 PAJ106 PAJ102 PAJ107 PAJ103 PAJ108 PAJ104 PAJ109 PAJ105 COJ1 PAJ200PAJ2016PAJ2015PAJ2014PAJ2013P",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/PDF/MPG-PO-PCB-1_Rev_C_Pulse_Oximeter.PDF",
+            "title": "MPG PO PCB 1 Rev C Pulse Oximeter"
+          }
+        },
+        {
+          "id": "EVID-1ab2c8ccd37c",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "1ab2c8ccd37c",
+            "extension": ".pdf",
+            "snippet": "",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/PDF/MPG-PO-PCB-1_Rev_C_Pulse_Oximeter_3D_View.PDF",
+            "title": "MPG PO PCB 1 Rev C Pulse Oximeter 3D View"
+          }
+        },
+        {
+          "id": "EVID-20e033e68563",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "cybersecurity",
+            "confidence_score": 0.86,
+            "content_hash": "20e033e68563",
+            "extension": ".html",
+            "snippet": "GitHub - GliaX/oximeter: Open Source DIY Pulse Oximeter Using Arduino · GitHub Skip to content Navigation Menu Toggle navigation Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry New Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial servic",
+            "source_path": "Pulse Oximeter/CyberSec/GitHub - GliaX_oximeter_ Open Source DIY Pulse Oximeter Using Arduino · GitHub.html",
+            "title": "GitHub   GliaX oximeter  Open Source DIY Pulse Oximeter Using Arduino · GitHub"
+          }
+        },
+        {
+          "id": "EVID-360875f1816c",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "360875f1816c",
+            "extension": ".txt",
+            "snippet": "Output: Bill of Materials Type : BOM From : Variant [[No Variations]] of Project [Pulse Oximeter.PrjPcb] Files Generated : 0 Documents Printed : 0 Finished Output Generation At 1:36:04 PM On 11/3/2015",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Status Report.Txt",
+            "title": "Status Report"
+          }
+        },
+        {
+          "id": "EVID-4065a8d6154b",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "complaint",
+            "confidence_score": 0.86,
+            "content_hash": "4065a8d6154b",
+            "extension": ".pdf",
+            "snippet": "FDA Executive Summary Review of Pulse Oximeters and Factors that can Impact their Accuracy Prepared for the November 1, 2022, meeting of the Anesthesiology Devices Advisory Committee Center for Devices and Radiological Health (CDRH) United States Food and Drug Administration i Contents I. Introduction and Purpose of the Advisory Committee Meeting .......................................................... 1 II. FDA Regulation of Pulse Oximeters ...................................................................................................... 3 III. Pulse Oximetry Technology .................................................................................................................. 4 A. Current Technology ........................................................................................................................... 4 B. Developments in Pulse Oximetry Technology ......",
+            "source_path": "Pulse Oximeter/Complaints & Post-Market Data/ARTDP-110122-ExecutiveSummary.pdf",
+            "title": "ARTDP 110122 ExecutiveSummary"
+          }
+        },
+        {
+          "id": "EVID-45fcddafcc81",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "45fcddafcc81",
+            "extension": ".htm",
+            "snippet": "Reporting Options File in Newer Format Date : 3/24/2015 Time : 9:45:42 AM Filename : X:\\USER FILES\\MPG Demo Files\\Demo Boards Layout Files - 3-16-2015\\Pulse Oximeter Rev D 2015-03\\MPG-PO-PCB-1.PcbDoc Version Warning Release 10 update 15 CAUTION - Support of Solder Mask and Paste Mask expansions for Tracks, Arcs, Fills and Regions was introduced. Be aware that your design might contain Solder Mask and Paste Mask expansions for these types of primitives that cannot be read in the version of Altium Designer you are currently using. Release 12 CAUTION - Air Gap Width previously controlled by Clearance rule is now controlled by Polygon Connect Style rule's newly introduced Air Gap Width (set to default value). Suggest reviewing each Polygon Connect Style rule's Air Gap Width attribute for correctness. Release 13 CAUTION - Silk To Solder Mask Clearance Rules are converted to Silkscreen Over Co",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/MPG-PO-PCB-1.PcbDoc.htm",
+            "title": "MPG PO PCB 1.PcbDoc"
+          }
+        },
+        {
+          "id": "EVID-46cb920c5a06",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "risk",
+            "confidence_score": 0.86,
+            "content_hash": "46cb920c5a06",
+            "extension": ".html",
+            "snippet": "Pulse Oximeter Accuracy and Limitations: FDA Safety Communication | FirstWord HealthTech Opens in a new window Opens an external website Opens an external website in a new window <!---->Close this dialog<!----> This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, and marketing. To learn more, view the following link: Cookie Policy Manage preferences <!---->Close Cookie Preferences<!----> Sign In Register Privacy Terms of Use Cookie Preferences Contact Us Home HealthTech+ MyFW+ Stories My Interests My Saved Searches News MyFW+ Stories Top Stories Company Condition Conference Market Segment Medical Meeting People Product Regulatory Market and Agency All News Insight, Analysis & Views The Wider View Physician Views KOL Views One To Watch Spotlight On Friday Five FW in Conversation All IAV StoryWatch Coronavirus Emerging Markets",
+            "source_path": "Pulse Oximeter/Risk Management/Pulse Oximeter Accuracy and Limitations_ FDA Safety Communication _ FirstWord HealthTech.html",
+            "title": "Pulse Oximeter Accuracy and Limitations  FDA Safety Communication   FirstWord HealthTech"
+          }
+        },
+        {
+          "id": "EVID-517d740d64ff",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "cybersecurity",
+            "confidence_score": 0.86,
+            "content_hash": "517d740d64ff",
+            "extension": ".html",
+            "snippet": "Open Source Pulse Oximeter for COVID-19 - Hackster.io × Welcome to Hackster! Hackster is a community dedicated to learning hardware, from beginner to pro. Join us , it's free! Hackster will be offline on Monday, June 15 from 5pm to 7pm PDT to perform some scheduled maintenance. Hackster.io Learning Hardware Community. Projects × Leave Feedback Log in Sign up Projects Projects Channels Channels News Contests Events Videos × Embed the widget on your own site Add the following snippet to your HTML: <iframe frameborder='0' height='385' scrolling='no' src='https://www.hackster.io/gatoninja236/open-source-pulse-oximeter-for-covid-19-4764c5/embed' width='350'></iframe> An easily constructed USB-powered pulse oximeter device that can be built for around $25 and features an OLED display. Read up about this project on Open Source Pulse Oximeter for COVID-19 Evan Rust 194 129,886 Overview Things St",
+            "source_path": "Pulse Oximeter/CyberSec/Open Source Pulse Oximeter for COVID-19 - Hackster.io.html",
+            "title": "Open Source Pulse Oximeter for COVID 19   Hackster.io"
+          }
+        },
+        {
+          "id": "EVID-5711ff420b0b",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "5711ff420b0b",
+            "extension": ".txt",
+            "snippet": "Output: ODB++ Files Type : ODB From : Variant [[No Variations]] of PCB Document [MPG-PO-PCB-1.PcbDoc] Generated File[matrix] Generated File[profile] Generated File[stephdr] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[tools] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[components] Generated File[data] Generated File[netlist] Generated File[MPG-PO-PCB-1.REP] Files Generated : 31 Docu",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/Status Report.Txt",
+            "title": "Status Report"
+          }
+        },
+        {
+          "id": "EVID-597938d416c2",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "597938d416c2",
+            "extension": ".pdf",
+            "snippet": "U.S. Food & Drug Administration 10903 New Hampshire Avenue D o c I D # 0 4 0 1 7 . 06 . 10 Silver Spring, MD 20993 www.fda.gov Beijing Choice Electronic Technology Co., Ltd. Haiying Zhao Quality Director 2nd Floor, 3rd Floor and Room 410-412 4th Floor No. 2 Building, No. 9 Shuangyuan Road Beijing, Shijingshan 100041 China Re: K232975 Trade/Device Name: Pulse Oximeter (MD300C228) Regulation Number: 21 CFR 870.2700 Regulation Name: Oximeter Regulatory Class: Class II Product Code: DQA Dated: May 17, 2024 Received: May 17, 2024 Dear Haiying Zhao: We have reviewed your section 510(k) premarket notification of intent to market the device referenced above and have determined the device is substantially equivalent (for the indications for use stated in the enclosure) to legally marketed predicate devices marketed in interstate commerce prior to May 28, 1976, the enactment date of the Medical De",
+            "source_path": "Pulse Oximeter/L1 Requirements & Design Evidence/K232975.pdf",
+            "title": "K232975"
+          }
+        },
+        {
+          "id": "EVID-6066aa97066f",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "regulatory",
+            "confidence_score": 0.86,
+            "content_hash": "6066aa97066f",
+            "extension": ".pdf",
+            "snippet": "Final Document IMDRF/GRRP WG/N89 FINAL: 2026 Playbook for Medical Device Regulatory Reliance Programs AUTHORING GROUP Good Regulatory Review Practices 02 February 2026 1 IMDRF/GRRP WG/N89 FINAL: 2026 Preface © Copyright 2026 by the International Medical Device Regulators Forum. This work is copyright. Subject to these Terms and Conditions, you may download, display, print, translate, modify and reproduce the whole or part of this work for your own personal use, for research, for educational purposes or, if you are part of an organization, for internal use within your organization, but only if you or your organization do not use the reproduction for any commercial purpose and retain all disclaimer notices as part of that reproduction. If you use any part of this work, you must include the following acknowledgement (delete inapplicable): “[Translated or adapted] from [insert name of public",
+            "source_path": "Pulse Oximeter/Regulatory Guidance (RAG Corpus)/IMDRF GRRP WG N89 Reliance Playbook.pdf",
+            "title": "IMDRF GRRP WG N89 Reliance Playbook"
+          }
+        },
+        {
+          "id": "EVID-67d981012e28",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "67d981012e28",
+            "extension": ".pdf",
+            "snippet": "1 1 2 2 3 3 4 4 D D C C B B A A Title Number RevisionSize A Date: 3/24/2015 Sheet of File: X:\\USER FILES\\..\\Sheet1.SchDoc Drawn By: Microchip Pulse Oximeter Demo Board Schematics DMPG-PO-SCH-1 Zhang Feng 1 MCP1640T-I/CHY GND2 VFB 4 VIN6 VOUT 5 EN3 SW1 U2 GND 10uF C1 10uF C2 976K, 1% R1 562K, 1% R2 GND GND GND GND Boost Regulator Microcontroller - dsPIC33FJ128GP802 VCC 3.3V AN0 AN1 PGC2 PGD2 RB0/DB0 OC2/RED RB1/DB1 RB2/DB2 RB3/DB3 RB4/DB4 RB5/DB5 RB6/DB6 RB7/DB7 SCL1 SDA1 OC1/IR RA2/RW RA3/RS RA4/E 5.1KR6 5.1KR7 1nF C5 1nF C6 1nF C7 1nF C8 VCC 3.3V GND DAC_B/RED DAC_A/IR DAC_C/DC OFFSET DAC_D SCL1 SDA1 RB0/DB0 RB1/DB1 RB2/DB2 RB3/DB3 RB4/DB4 RB5/DB5 RB6/DB6 RB7/DB7 RA4/E RA2/RW RA3/RS DAC VCC 3.3V GND MCLR 10K R4 VCC 3.3V GND MCLR 470 R3 VCC 3.3V 10uFC4 0.1uFC9 GND VCC 3.3V M MCLR ICSP VCC 3.3V GND VCC 3.3V GND 0.1uF C10 0.1uF C11 S2 MCLR_n GND 0.1uF C12 PGD2 U1TX PGC2 TP1 U1TX GND BT1 Ba",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Pulse Oximeter Schematics.pdf",
+            "title": "Pulse Oximeter Schematics"
+          }
+        },
+        {
+          "id": "EVID-72096434a02f",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "risk",
+            "confidence_score": 0.86,
+            "content_hash": "72096434a02f",
+            "extension": ".pdf",
+            "snippet": "© ISO 2019 Medical devices — Application of risk management to medical devices Dispositifs médicaux — Application de la gestion des risques aux dispositifs médicaux INTERNATIONAL STANDARD ISO 14971 Third edition 2019-12 Reference number ISO 14971:2019(E) Copyrighted material licensed to University of Iowa by Clarivate Analytics (US) LLC, subscriptions.techstreet.com, downloaded on 2019-12-29 06:51:38 +0000 by University of Iowa User. No further reproduction or distribution is permitted. ISO 14971:2019(E) ii © ISO 2019 – All rights reserved COPYRIGHT PROTECTED DOCUMENT © ISO 2019 All rights reserved. Unless otherwise specified, or required in the context of its implementation, no part of this publication may be reproduced or utilized otherwise in any form or by any means, electronic or mechanical, including photocopying, or posting on the internet or an intranet, without prior written per",
+            "source_path": "Pulse Oximeter/Risk Management/EN-ISO-14971-2019-Application-of-risk-management.pdf",
+            "title": "EN ISO 14971 2019 Application of risk management"
+          }
+        },
+        {
+          "id": "EVID-72d2d2898db2",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "72d2d2898db2",
+            "extension": ".pdf",
+            "snippet": "N Ch NHD‐ 0216 HZ‐ F‐ SW‐ F‐ B‐ W‐ 33V3 C‐ NHD‐ aracter ‐ N 6‐ 2 M Tr Si FS O W 3‐ 3 Te R ‐021 r Liquid ewhaven Dis Lines x 16 Ch Model ransflective ide White LED STN (+) Optimal 6:00 V Wide Tempera .3 VDD, 3 Vol emperature C oHS Complia nhtech 6HZ Crysta play haracters D Backlight View ature t Backlight Compensatio nt Newh Ph: 8 h@newhaven ‐FSW l Displa n Circuit haven Disp 2511 Techno Elg 847‐844‐8795 www.new ndisplay.com W‐FB ay Modu play Intern ology Drive, S gin IL, 60124 5 Fax: 8 whavendisplay nhsa BW‐3 ule national, In Suite 101 847‐844‐8796 y.com ales@newhav 33V3 nc. 6 vendisplay.co 3C om [2] Document Revision History Revision Date Description Changed by 0 10/31/2011 33V – improved liquid; VDD = 3.3V SB 1 11/07/2013 Datasheet reformatted ML Functions and Features  2 lines x 16 characters  Built‐in controller (ST7066U or equivalent)  +3.3V Power Supply  1/16 duty, 1/5 bias  R",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/LCD -- NHD-0216HZ-FSW-FBW-33V3C.pdf",
+            "title": "LCD   NHD 0216HZ FSW FBW 33V3C"
+          }
+        },
+        {
+          "id": "EVID-76d870029d65",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "76d870029d65",
+            "extension": ".txt",
+            "snippet": "Designator Footprint Mid X Mid Y Ref X Ref Y Pad X Pad Y TB Rotation Comment U1 SOIC-SO28_N 2400mil 1653.367mil 2400mil 1653.367mil 2725mil 1832.501mil T 270.00 DSPIC33FJ128GP802-I/SO R4 Res_0603 2780mil 1972.502mil 2780mil 2002.502mil 2780mil 2002.502mil T 270.00 Res3 R3 Res_0603 2725mil 1972.502mil 2725mil 1942.502mil 2725mil 1942.502mil T 90.00 Res3 C12 CAP0603 2835mil 1972.502mil 2835mil 2002.502mil 2835mil 2002.502mil T 270.00 Cap Semi C11 CAP0603 2730mil 1357.501mil 2730mil 1387.501mil 2730mil 1387.501mil T 270.00 Cap Semi C10 CAP0603 2125mil 1962.501mil 2125mil 1932.501mil 2125mil 1932.501mil T 90.00 Cap Semi C3 CAP0805 2310mil 1327.501mil 2310mil 1282.501mil 2310mil 1282.501mil T 90.00 Cap Semi R6 Res_0603 2165mil 1307.501mil 2165mil 1277.501mil 2165mil 1277.501mil T 90.00 Res3 R7 Res_0603 2225mil 1307.501mil 2225mil 1277.501mil 2225mil 1277.501mil T 90.00 Res3 C18 CAP0603 620mil",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/Pick Place/Pick Place for MPG-PO-PCB-1.txt",
+            "title": "Pick Place for MPG PO PCB 1"
+          }
+        },
+        {
+          "id": "EVID-7bd9322e456c",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "regulatory",
+            "confidence_score": 0.86,
+            "content_hash": "7bd9322e456c",
+            "extension": ".html",
+            "snippet": "eCFR :: 21 CFR Part 820 -- Quality Management System Regulation Site Feedback You are using an unsupported browser × You are using an unsupported browser. This web site is designed for the current versions of Microsoft Edge, Google Chrome, Mozilla Firefox, or Safari. × Site Feedback The Office of the Federal Register publishes documents on behalf of Federal agencies but does not have any authority over their programs. We recommend you directly contact the agency associated with the content in question. If you have comments or suggestions on how to improve the www.ecfr.gov website or have questions about using www.ecfr.gov, please choose the 'Website Feedback' button below. Website Feedback If you would like to comment on the current content, please use the 'Content Feedback' button below for instructions on contacting the issuing agency Content Feedback If you have questions for the Agen",
+            "source_path": "Pulse Oximeter/Regulatory Guidance (RAG Corpus)/eCFR __ 21 CFR Part 820 -- Quality Management System Regulation.html",
+            "title": "eCFR   21 CFR Part 820   Quality Management System Regulation"
+          }
+        },
+        {
+          "id": "EVID-84a8cb1d0d03",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "84a8cb1d0d03",
+            "extension": ".csv",
+            "snippet": "Designator | Footprint | Mid X | Mid Y | Ref X | Ref Y | Pad X | Pad Y | Layer | Rotation | Comment U1 | SOIC-SO28_N | 2400mil | 1653.367mil | 2400mil | 1653.367mil | 2725mil | 1832.501mil | T | 270.00 | DSPIC33FJ128GP802-I/SO R4 | Res_0603 | 2780mil | 1972.502mil | 2780mil | 2002.502mil | 2780mil | 2002.502mil | T | 270.00 | Res3 R3 | Res_0603 | 2725mil | 1972.502mil | 2725mil | 1942.502mil | 2725mil | 1942.502mil | T | 90.00 | Res3 C12 | CAP0603 | 2835mil | 1972.502mil | 2835mil | 2002.502mil | 2835mil | 2002.502mil | T | 270.00 | Cap Semi C11 | CAP0603 | 2730mil | 1357.501mil | 2730mil | 1387.501mil | 2730mil | 1387.501mil | T | 270.00 | Cap Semi C10 | CAP0603 | 2125mil | 1962.501mil | 2125mil | 1932.501mil | 2125mil | 1932.501mil | T | 90.00 | Cap Semi C3 | CAP0805 | 2310mil | 1327.501mil | 2310mil | 1282.501mil | 2310mil | 1282.501mil | T | 90.00 | Cap Semi R6 | Res_0603 | 2165mil |",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/Pick Place/Pick Place for MPG-PO-PCB-1.csv",
+            "title": "Pick Place for MPG PO PCB 1"
+          }
+        },
+        {
+          "id": "EVID-8765b82dd59e",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "complaint",
+            "confidence_score": 0.86,
+            "content_hash": "8765b82dd59e",
+            "extension": ".html",
+            "snippet": "Class 2 Device Recall Pulse Oximeter Quick Links: Skip to main page content Skip to Search Skip to Topics Menu Skip to Common Links U.S. Food & Drug Administration Follow FDA En Español Search FDA Home Food Drugs Medical Devices Radiation-Emitting Products Vaccines, Blood & Biologics Animal & Veterinary Cosmetics Tobacco Products Class 2 Device Recall Pulse Oximeter 1 2 FDA Home 3 Medical Devices 4 Databases 5 - 6 510(k) 7 | DeNovo 8 | Registration & Listing 9 | Adverse Events 10 | Recalls 11 | PMA 12 | HDE 13 | Classification 14 | Standards 15 CFR Title 21 16 | Radiation-Emitting Products 17 | X-Ray Assembler 18 | Medsun Reports 19 | CLIA 20 | TPLC 21 New Search Back to Search Results Class 2 Device Recall Pulse Oximeter 22 Date Initiated by Firm March 13, 2013 Date Posted April 29, 2013 Recall Status 1 Terminated 3 on June 10, 2015 Recall Number Z-1187-2013 Recall Event ID 64812 23 Pro",
+            "source_path": "Pulse Oximeter/Complaints & Post-Market Data/Class 2 Device Recall Pulse Oximeter.html",
+            "title": "Class 2 Device Recall Pulse Oximeter"
+          }
+        },
+        {
+          "id": "EVID-8cac73098380",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "8cac73098380",
+            "extension": ".pdf",
+            "snippet": "1 1 2 2 3 3 4 4 D D C C B B A A Title Number RevisionSize A Date: 3/24/2015 Sheet of File: C:\\MICROCHIP_DESIGNS\\..\\Sheet1.SchDocDrawn By: Microchip Pulse Oximeter Demo Board Schematics DMPG-PO-SCH-1 Zhang Feng 1 MCP1640T-I/CHY GND2 VFB 4 VIN6 VOUT 5 EN3 SW1 U2 GND 10uF C1 10uF C2 976K, 1% R1 562K, 1% R2 GND GND GND GND Boost Regulator Microcontroller - dsPIC33FJ128GP802 VCC 3.3V AN0 AN1 PGC2 PGD2 RB0/DB0 OC2/RED RB1/DB1 RB2/DB2 RB3/DB3 RB4/DB4 RB5/DB5 RB6/DB6 RB7/DB7 SCL1 SDA1 OC1/IR RA2/RW RA3/RS RA4/E 5.1KR6 5.1KR7 1nF C5 1nF C6 1nF C7 1nF C8 VCC 3.3V GND DAC_B/RED DAC_A/IR DAC_C/DC OFFSET DAC_D SCL1 SDA1 RB0/DB0 RB1/DB1 RB2/DB2 RB3/DB3 RB4/DB4 RB5/DB5 RB6/DB6 RB7/DB7 RA4/E RA2/RW RA3/RS DAC VCC 3.3V GND MCLR 10K R4 VCC 3.3V GND MCLR 470 R3 VCC 3.3V 10uFC4 0.1uFC9 GND VCC 3.3V M MCLR ICSP VCC 3.3V GND VCC 3.3V GND 0.1uF C10 0.1uF C11 S2 MCLR_n GND 0.1uF C12 PGD2 U1TX PGC2 TP1 U1TX GND ",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/PDF/MPG-PO-SCH-1_REV_C_Pulse_Oximeter.PDF",
+            "title": "MPG PO SCH 1 REV C Pulse Oximeter"
+          }
+        },
+        {
+          "id": "EVID-8ff17b7d3b4d",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "risk",
+            "confidence_score": 0.86,
+            "content_hash": "8ff17b7d3b4d",
+            "extension": ".pdf",
+            "snippet": "INTRODUCTION The COVID-19 pandemic saw a rapid increase in the use of pulse oximetry devices (PODs) in primary care to triage and monitor large numbers of patients and to help decide which patients required admission to hospital. In the UK, this included providing 300 000 PODs to patients as part of the ‘virtual ward’ programme and there have been calls to extend the use of remote monitoring to patients with other medical conditions.1–3 However, the increased use of pulse oximetry has been accompanied by growing concern over the potential for PODs to produce inaccurate oxygen saturation (SpO2) readings and the effect that this could have on critical decisions regarding the management of patients. This article discusses the factors that can lead to inaccurate SpO2 readings and the implications that this could have for both GPs and patients. THE ACCURACY OF PULSE OXIMETRY DEVICES (PODS) In",
+            "source_path": "Pulse Oximeter/Risk Management/Accuracy and precision of pulse oximeter at different sensor locations in patients with heart failure.pdf",
+            "title": "Accuracy and precision of pulse oximeter at different sensor locations in patients with heart failure"
+          }
+        },
+        {
+          "id": "EVID-96ddc45973a0",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "96ddc45973a0",
+            "extension": ".txt",
+            "snippet": "M48 ;Layer_Color=9474304 ;FILE_FORMAT=2:4 INCH,TZ ;TYPE=NON_PLATED T8F00S00C0.1300 % T08 X38800Y6800 X1200Y6800 X3335Y21525 X27154Y21525 X27154Y34005 X38800Y33800 X3335Y34005 X1200Y33800 M30",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/NC Drill/MPG-PO-PCB-1-NonPlated.TXT",
+            "title": "MPG PO PCB 1 NonPlated"
+          }
+        },
+        {
+          "id": "EVID-9c2d1732ed73",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "9c2d1732ed73",
+            "extension": ".html",
+            "snippet": "Design Rule Verification Report customize Design Rule Verification Report Date : 3/24/2015 Time : 9:24:04 AM Elapsed Time : 00:00:03 Filename : C:\\MICROCHIP_DESIGNS\\Demo Boards Layout Files\\Pulse Oximeter Rev C 2015-01\\MPG-PO-PCB-1.PcbDoc Warnings : 0 Rule Violations : 0 Summary Warnings Count Total 0 Rule Violations Count Clearance Constraint (Gap=7.874mil) ((IsTrack) or (InPadClass('All Pads'))),(HasFootprint('QFN-40_5x5','TQFP-100_14x14')) 0 Net Antennae (Tolerance=0mil) (All) 0 Silk to Silk (Clearance=2mil) (All),(All) 0 Silk To Solder Mask (Clearance=2mil) (IsPad),(All) 0 Minimum Solder Mask Sliver (Gap=5mil) (All),(All) 0 Hole To Hole Clearance (Gap=11.811mil) (All),(All) 0 Hole Size Constraint (Min=11.811mil) (Max=196.85mil) (All) 0 Component Clearance Constraint ( Horizontal Gap = 7.874mil, Vertical Gap = 7.874mil ) (All),(All) 0 Width Constraint (Min=7.874mil) (Max=275.591mil) (",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Design Rule Check - MPG-PO-PCB-1.html",
+            "title": "Design Rule Check   MPG PO PCB 1"
+          }
+        },
+        {
+          "id": "EVID-a307564e0649",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "cybersecurity",
+            "confidence_score": 0.86,
+            "content_hash": "a307564e0649",
+            "extension": ".pdf",
+            "snippet": "Contains Nonbinding Recommendations Cybersecurity in Medical Devices: Quality Management System Considerations and Content of Premarket Submissions Guidance for Industry and Food and Drug Administration Staff Document issued on February 3, 2026. This document supersedes “Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submissions,” issued June 27, 2025. For questions about this document regarding CDRH-regulated devices, contact CyberMed@fda.hhs.gov. For questions about this document regarding CBER-regulated devices, contact the Office of Communication, Outreach, and Development (OCOD) at 800-835-4709 or 240-402-8010, or by email at industry.biologics@fda.hhs.gov. U.S. Department of Health and Human Services Food and Drug Administration Center for Devices and Radiological Health Center for Biologics Evaluation and Research Contains Nonbinding Recom",
+            "source_path": "Pulse Oximeter/CyberSec/Premarket-Cybersecurity-Guidance-2026.pdf",
+            "title": "Premarket Cybersecurity Guidance 2026"
+          }
+        },
+        {
+          "id": "EVID-a38e7dba462e",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "regulatory",
+            "confidence_score": 0.86,
+            "content_hash": "a38e7dba462e",
+            "extension": ".pdf",
+            "snippet": "Title 21 —Food and Drugs Chapter I —Food and Drug Administration, Department of Health and Human Services Subchapter H —Medical Devices Part 820 Quality Management System Regulation Subpart A General Provisions § 820.1 Scope. § 820.3 Definitions. § 820 .5 [Reserved] § 820.7 Incorporation by reference. § 820.10 Requirements for a quality management system. Subpart B Supplemental Provisions §§ 820 .20-820.30 [Reserved] § 820.35 Control of records. § 820 .40 [Reserved] § 820.45 Device labeling and packaging controls. Subparts C-O [Reserved] PART 820—QUALITY MANAGEMENT SYSTEM REGULATION Authority: 21 U.S.C. 351, 352, 360, 360c, 360d, 360e, 360h, 360i, 360j, 360l, 371, 374, 381, 383; 42 U.S.C. 216, 262, 263a, 264. Source: 89 FR 7523, Feb. 2, 2024, unless otherwise noted. Subpart A—General Provisions § 820.1 Scope. This content is from the eCFR and is authoritative but unofficial. (a) Applicab",
+            "source_path": "Pulse Oximeter/Regulatory Guidance (RAG Corpus)/21 CFR Part 820 (up to date as of 6-11-2026).pdf",
+            "title": "21 CFR Part 820 (up to date as of 6 11 2026)"
+          }
+        },
+        {
+          "id": "EVID-a4ae8a6fdfdd",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "a4ae8a6fdfdd",
+            "extension": ".txt",
+            "snippet": "M48 ;Layer_Color=9474304 ;FILE_FORMAT=2:4 INCH,TZ ;TYPE=PLATED T1F00S00C0.0150 T2F00S00C0.0250 T3F00S00C0.0315 T4F00S00C0.0380 T5F00S00C0.0394 T6F00S00C0.0429 T7F00S00C0.1283 % T01 X5800Y6625 X6900Y8175 X4750Y10875 X2400Y17275 X5450Y19011 X5635Y20018 X14243Y19575 X13700Y16075 X15050Y14875 X16850Y16075 X17000Y17525 X19650Y17875 X19950Y18675 X21609Y19925 X22750Y19525 X23250Y20075 X23750Y17666 X22750Y15401 X22250Y13775 X21650Y13875 X23850Y13775 X24311Y12598 X23100Y12225 X16350Y12025 X14250Y12025 X12450Y10475 X11800Y10775 X11950Y9775 X11044Y11175 X10300Y13025 X10100Y14475 X11150Y14075 X11850Y14575 X10850Y15525 X9600Y9775 X18150Y14875 X24750Y15525 X25250Y15675 X26750Y15401 X27300Y12825 X26750Y19125 X26250Y19425 X26400Y20025 X28357Y19066 X36600Y12375 X39350Y13125 X39600Y11399 X3150Y28248 T02 X37250Y9425 X37250Y10895 T03 X38100Y1875 X38100Y2859 X38100Y3844 X39360Y3844 X39360Y2859 X39360Y1875 T0",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/NC Drill/MPG-PO-PCB-1-Plated.TXT",
+            "title": "MPG PO PCB 1 Plated"
+          }
+        },
+        {
+          "id": "EVID-a8c481415db9",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "a8c481415db9",
+            "extension": ".pdf",
+            "snippet": "Making of a Pulse Oximeter: • Pulse oximeters are relatively simple devices, but their creation still involves a fascinating blend of engineering, technology, and precision manufacturing. Here's a breakdown of the key steps: 1. Concept and Design: • The pulse oximeter concept arose from the need for a non-invasive method to measure blood oxygen saturation (SpO2). • Early research in the 1930s laid the groundwork, and the first commercial devices appeared in the 1970s. • Modern pulse oximeters are designed to be compact, portable, and easy to use for both medical professionals and home users. 2. Technology and Materials: • The core technology of a pulse oximeter relies on two key components: • Light-emitting diodes (LEDs): A red LED and an infrared LED emit light through a fingertip or earlobe. • Photodetector: This sensor measures the amount of light absorbed by the blood, which depends ",
+            "source_path": "Pulse Oximeter/L1 Requirements & Design Evidence/Pulse Oximeter Design and Manufacturing Guide.pdf",
+            "title": "Pulse Oximeter Design and Manufacturing Guide"
+          }
+        },
+        {
+          "id": "EVID-b3b307fa8c63",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "b3b307fa8c63",
+            "extension": ".txt",
+            "snippet": "------------------------------------------------------------------------------------------ Gerber File Extension Report For: MPG-PO-PCB-1_REV_C.zip 30/01/2015 ------------------------------------------------------------------------------------------ see ./PDF/MPG-PO-PCB-1_Rev_C_Pulse_Oximeter.PDF final page for fabrication notes ------------------------------------------------------------------------------------------ Layer Extension Layer Description ------------------------------------------------------------------------------------------ .GBL Bottom Layer .GBO Bottom Overlay .GBS Bottom Solder .GD1 Drill Drawing .GG1 Drill Guild .GM2 Mechanical - Board Outline .GM4 Mechanical - Fab Notes .GTL Top Layer .GTO Top Overlay .GTS Top Solder MPG-PO-PCB-1-Plated.TXT - Excellon Drill file - round holes - plated MPG-PO-PCB-1-NonPlated.TXT - Excellon Drill file - round holes - nonplated --------",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/Pulse Oximeter Rev D 2015-03 Schematics & Layout/Project Outputs/Standard/readme.txt",
+            "title": "readme"
+          }
+        },
+        {
+          "id": "EVID-c40f8cf7e07b",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "complaint",
+            "confidence_score": 0.86,
+            "content_hash": "c40f8cf7e07b",
+            "extension": ".html",
+            "snippet": "MAUDE Adverse Event Report:; PULSE OXIMETER Quick Links: Skip to main page content Skip to Search Skip to Topics Menu Skip to Common Links U.S. Food & Drug Administration Follow FDA En Español Search FDA Home Food Drugs Medical Devices Radiation-Emitting Products Vaccines, Blood & Biologics Animal & Veterinary Cosmetics Tobacco Products MAUDE Adverse Event Report:; PULSE OXIMETER 1 2 FDA Home 3 Medical Devices 4 Databases 5 - 6 510(k) 7 | DeNovo 8 | Registration & Listing 9 | Adverse Events 10 | Recalls 11 | PMA 12 | HDE 13 | Classification 14 | Standards 15 CFR Title 21 16 | Radiation-Emitting Products 17 | X-Ray Assembler 18 | Medsun Reports 19 | CLIA 20 | TPLC 21 ; PULSE OXIMETER Back to Search Results Health Effect - Clinical Code No Clinical Signs, Symptoms or Conditions (4582) Date of Event 01/12/2024 Type of Reportable Event Malfunction Event or Problem Description O2 saturation t",
+            "source_path": "Pulse Oximeter/Complaints & Post-Market Data/MAUDE Adverse Event Report_; PULSE OXIMETER.html",
+            "title": "MAUDE Adverse Event Report ; PULSE OXIMETER"
+          }
+        },
+        {
+          "id": "EVID-c55113260c0f",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "complaint",
+            "confidence_score": 0.86,
+            "content_hash": "c55113260c0f",
+            "extension": ".html",
+            "snippet": "MDR Database Search Quick Links: Skip to main page content Skip to Search Skip to Topics Menu Skip to Common Links U.S. Food & Drug Administration Follow FDA En Español Search FDA Home Food Drugs Medical Devices Radiation-Emitting Products Vaccines, Blood & Biologics Animal & Veterinary Cosmetics Tobacco Products MDR Database Search 1 2 FDA Home 3 Medical Device 4 Databases 5 - 6 510(k) 7 | DeNovo 8 | Registration & Listing 9 | Adverse Events 10 | Recalls 11 | PMA 12 | HDE 13 | Classification 14 | Standards 15 CFR Title 21 16 | Radiation-Emitting Products 17 | X-Ray Assembler 18 | Medsun Reports 19 | CLIA 20 | TPLC 21 New Search Back To Search Results BRAND NAME PULSE OXIMETER OHMEDA 1315 W. CENTURY DRIVE LOUISVILLE CO 80027 ACCESS NUMBER M704201 PRODUCT CODE DQA 22 PANEL CARDIOVASCULAR REPORT TYPE DEATH DATE FDA RECEIVED 03/27/1995 DEVICE MODEL NUMBER 3760P DEVICE CATALOGUE NUMBER 0380-",
+            "source_path": "Pulse Oximeter/Complaints & Post-Market Data/MDR Database Search.html",
+            "title": "MDR Database Search"
+          }
+        },
+        {
+          "id": "EVID-c56a1ebdac29",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "c56a1ebdac29",
+            "extension": ".pdf",
+            "snippet": "User’s Guide and Test Report TIDA-00311 1 Miniaturized Pulse Oximeter Reference Design HealthTech ABSTRACT The scope of this document is to provide a miniaturized pulse oximeter reference design for high end clinical application. This reference design features AFE4403, TI’s high performance Analog Front End for pulse oximeters, an ultra-low power microcontroller and a highly optimized integrated dual light emitting diodes (LED) and photodiode optical sensor. This reference design simplifies and accelerates the pulse oximeter system design while still ensuring the highest quality clinical measurements. Document History Version Date Author Notes 1.0 June 2014 Praveen Aroul First release TIDA-00311 2 Contents 1 Design Summary .......................................................................................................................... 4 1.1 Design Goal ..........................",
+            "source_path": "Pulse Oximeter/L1 Requirements & Design Evidence/Miniaturized Pulse Oximeter Reference Design.pdf",
+            "title": "Miniaturized Pulse Oximeter Reference Design"
+          }
+        },
+        {
+          "id": "EVID-c5c55ab2bb13",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "c5c55ab2bb13",
+            "extension": ".pdf",
+            "snippet": " 2013-2015 Microchip Technology Inc. DS00001525B-page 1 AN1525 INTRODUCTION Pulse oximeter is a non-invasive medical device that monitors the oxygen saturation of a patient’s blood and heart rate. This application note demonstrates the implementation of a high-accuracy pulse oximeter using Microchip’s analog devices and dsPIC® Digital Signal Controllers (DSCs). FIGURE 1: FUNCTIO N BLOCK DIAGRAM Author: Zhang Feng Microchip Technology Inc. DC Offset ADC1 Microcontroller Photodiode IR Red DAC Computer, WiFi® or Bluetooth® I2C™ I/O UART PWM1 Transimpedance Amplifier Gain Stage Amplifier ADC0 Analog Signal Conditioning LED Current Control Analog Switch LED On/Off LED Driver PWM2 Highpass Filter LCD Pulse Oximeter Design Using Microchip’s Analog Devices and dsPIC® Digital Signal Controllers (DSCs) AN1525 DS00001525B-page 2  2013-2015 Microchip Technology Inc. THEORY OF OPERATION A pulse oxi",
+            "source_path": "Pulse+Oximeter+Design+Files.zip/Pulse Oximeter/00001525B.pdf",
+            "title": "00001525B"
+          }
+        },
+        {
+          "id": "EVID-d0d8a225b873",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "d0d8a225b873",
+            "extension": ".pdf",
+            "snippet": "1 Harskamp RE, et al. BMJ Open Resp Res 2021;8:e000939. doi:10.1136/bmjresp-2021-000939 To cite: Harskamp RE, Bekker L, Himmelreich JCL, et al. Performance of popular pulse oximeters compared with simultaneous arterial oxygen saturation or clinical- grade pulse oximetry: a cross- sectional validation study in intensive care patients. BMJ Open Resp Res 2021;8 :e000939. doi:10.1136/ bmjresp-2021-000939 ► Additional supplemental material is published online only. To view, please visit the journal online (http:// dx. doi. org/ 10. 1136/ bmjresp- 2021- 000939). REH and LB are joint first authors. Received 24 March 2021 Accepted 11 July 2021 1Department of General Practice, Amsterdam UMC Locatie AMC, Amsterdam, North Holland, The Netherlands 2Flevoziekenhuis, Almere, Flevoland, The Netherlands Correspondence to Ralf E Harskamp; r. e. harskamp@ amsterdamumc. nl Performance of popular pulse oxim",
+            "source_path": "Pulse Oximeter/L1 Requirements & Design Evidence/bmjresp-2021-000939.pdf",
+            "title": "bmjresp 2021 000939"
+          }
+        },
+        {
+          "id": "EVID-d5a1fb2a75c6",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "risk",
+            "confidence_score": 0.86,
+            "content_hash": "d5a1fb2a75c6",
+            "extension": ".docx",
+            "snippet": "Preface © Copyright 2024 by the International Medical Device Regulators Forum. This work is copyright. Subject to these Terms and Conditions, you may download, display, print, translate, modify and reproduce the whole or part of this work for your own personal use, for research, for educational purposes or, if you are part of an organisation, for internal use within your organisation, but only if you or your organisation do not use the reproduction for any commercial purpose and retain all disclaimer notices as part of that reproduction. If you use any part of this work, you must include the following acknowledgement (delete inapplicable): “[Translated or adapted] from [insert name of publication], [year of publication], International Medical Device Regulators Forum, used with the permission of the International Medical Device Regulators Forum. The International Medical Device Regulators",
+            "source_path": "Pulse Oximeter/Regulatory Guidance (RAG Corpus)/IMDRF_SaMD WG_Software-Specific Risk_N81 Final_0.docx",
+            "title": "IMDRF SaMD WG Software Specific Risk N81 Final 0"
+          }
+        },
+        {
+          "id": "EVID-d698cf1c3b4a",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "d698cf1c3b4a",
+            "extension": ".pdf",
+            "snippet": "Information for healthcare professionals on how pulse oximeters are regulated, home use and issues to look out for when using the devices From: Published Guidance The use and regulation of pulseoximeters (information for healthcareprofessionals) Medicines and Healthcare products Regulatory Agency (/government/organisations/medicines-and-healthcare-products-regulatory-agency) 26 March 2021 Pulse oximeters and why they are used Pulse oximetry is a well-established technique used in healthcare to take a non-invasive measurement of the blood-oxygen level of a patient. This measurement can help with the early detection of signs of deterioration. The value produced is just one part of the range of measurements that clinicians Contents Pulse oximeters and why they are used— Factors which can affect the accuracy of pulse oximeters— Home use of pulse oximeters— Regulation of pulse oximeters— Advi",
+            "source_path": "Pulse Oximeter/L1 Requirements & Design Evidence/The use and regulation of pulse oximeters (information for healthcare professionals) - GOV.UK.pdf",
+            "title": "The use and regulation of pulse oximeters (information for healthcare professionals)   GOV.UK"
+          }
+        },
+        {
+          "id": "EVID-e75913d11135",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "design_evidence",
+            "confidence_score": 0.86,
+            "content_hash": "e75913d11135",
+            "extension": ".pdf",
+            "snippet": "TaiDoc Technology Corportation DEC 15 210 Attachment C4 510(k) Summary 1. Submitter Information Company name Taiooc Technology Corporation Contact person Teling Hsu Address 3F, 5F, No. 127, Wugong 2nd Rd., Wugu Township, Taipei County, 24888, Taiwan Phone (+886-2) 6625-81 88 ext. 1176 FAX (+886-2) 6625-0288 E-mail teling.hsu~taidoc.cam.tw Date Prepared April 2'\", 2010 2. Name of Device Trade Names - V-TRUST Handheld Pulse Oximeter aCommon Names Oximeter Product Code OQA Classification Panel Anesthesiology Regulations Class 11 21 CFR 870.2700 3. Predicate Device Trade/Proprietary Name: 503 PULSE OXIMETER Common/Usual Name: Oximeter Submitter CRITICARE SYSTEMS, INC. 510 (k) Number K911124 4. Device Description Ii The V-TRUST Handheld Pulse Oximeter is a light weight, portable and non-invasive pulse oximeter designed for use in measuring and displaying functional arterial oxygen saturation ",
+            "source_path": "Pulse Oximeter/L1 Requirements & Design Evidence/K101012.pdf",
+            "title": "K101012"
+          }
+        },
+        {
+          "id": "EVID-eb9a3051e2bc",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "regulatory",
+            "confidence_score": 0.86,
+            "content_hash": "eb9a3051e2bc",
+            "extension": ".pdf",
+            "snippet": "Contains Nonbinding Recommendations Draft – Not for Implementation Pulse Oximeters for Medical Purposes - Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations Draft Guidance for Industry and Food and Drug Administration Staff DRAFT GUIDANCE This draft guidance document is being distributed for comment purposes only. Document issued on January 7, 2025. You should submit comments and suggestions regarding this draft document within 60 days of publication in the Federal Register of the notice announcing the availability of the draft guidance. Submit electronic comments to https://www.regulations.gov. Submit written comments to the Dockets Management Staff, Food and Drug Administration, 5630 Fishers Lane, Room 1061, (HFA-305), Rockville, MD 20852. Identify all comments with the docket number listed in the notice of availability that publishes in t",
+            "source_path": "Pulse Oximeter/L1 Requirements & Design Evidence/pulse-oximeters-for-medical-purposes-draft-guidance_0.pdf.pdf",
+            "title": "pulse oximeters for medical purposes draft guidance 0.pdf"
+          }
+        },
+        {
+          "id": "EVID-f6dd2226c38d",
+          "labels": [
+            "Evidence"
+          ],
+          "properties": {
+            "category": "regulatory",
+            "confidence_score": 0.86,
+            "content_hash": "f6dd2226c38d",
+            "extension": ".pdf",
+            "snippet": "Title: IMDRF/AE WG/N43FINAL:2020 (Edition 4) IMDRF International Medical Device Regulators Forum FI NA L DOCUME N T IMDRF terminologies for categorized Adverse Event Reporting (AER): terms, terminology structure and codes Authoring Group: IMDRF Adverse Event Terminology Working Group Date: 18 March 2020 Dr Choong May Ling, Mimi, IMDRF Chair This document was produced by the International Medical Device Regulators Forum. There are no restrictions on the reproduction or use of this document; however, incorporation of this document, in part or in whole, into another document, or its translation into languages other than English, does not convey or represent an endorsement of any kind by the International Medical Device Regulators Forum. Copyright© 2020 by the International Medical Device Regulators Forum IMDRF/AE WG/N43FINAL:2020 (Edition 4) 18 March 2020 Page 2 of 23 Table of Contents 1. I",
+            "source_path": "Pulse Oximeter/Regulatory Guidance (RAG Corpus)/imdrf-tech-200318-ae-terminologies-n43.pdf",
+            "title": "imdrf tech 200318 ae terminologies n43"
+          }
+        },
+        {
+          "id": "FW-v2.1",
+          "labels": [
+            "FirmwareVersion",
+            "SoftwareVersion"
+          ],
+          "properties": {
+            "change_summary": "Baseline release used by stale evidence",
+            "release_date": "2026-06-01",
+            "version": "v2.1"
+          }
+        },
+        {
+          "id": "FW-v3.4",
+          "labels": [
+            "FirmwareVersion",
+            "SoftwareVersion"
+          ],
+          "properties": {
+            "change_summary": "Current release under audit",
+            "release_date": "2026-06-01",
+            "version": "v3.4"
+          }
+        },
+        {
+          "id": "FW-v3.5",
+          "labels": [
+            "FirmwareVersion",
+            "SoftwareVersion"
+          ],
+          "properties": {
+            "change_summary": "Final verification firmware update",
+            "release_date": "2026-06-25",
+            "version": "v3.5"
+          }
+        },
+        {
+          "id": "REQ-GEN-001",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Design inputs shall be traceable to verification evidence.",
+            "category": "Design Control",
+            "standard": "21 CFR 820.30",
+            "status": "Active",
+            "text": "Design inputs shall be traceable to verification evidence."
+          }
+        },
+        {
+          "id": "REQ-GEN-002",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Design outputs shall satisfy approved design inputs.",
+            "category": "Design Control",
+            "standard": "21 CFR 820.30",
+            "status": "Active",
+            "text": "Design outputs shall satisfy approved design inputs."
+          }
+        },
+        {
+          "id": "REQ-GEN-003",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Risk controls shall be verified for effectiveness.",
+            "category": "Design Control",
+            "standard": "ISO 14971",
+            "status": "Active",
+            "text": "Risk controls shall be verified for effectiveness."
+          }
+        },
+        {
+          "id": "REQ-GEN-004",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Complaint records shall be evaluated for reportability.",
+            "category": "Design Control",
+            "standard": "21 CFR 820.198",
+            "status": "Active",
+            "text": "Complaint records shall be evaluated for reportability."
+          }
+        },
+        {
+          "id": "REQ-GEN-005",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: CAPA records shall identify root cause and verification of effectiveness.",
+            "category": "Design Control",
+            "standard": "21 CFR 820.100",
+            "status": "Active",
+            "text": "CAPA records shall identify root cause and verification of effectiveness."
+          }
+        },
+        {
+          "id": "REQ-GEN-006",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Software changes shall be assessed for verification impact.",
+            "category": "Design Control",
+            "standard": "IEC 62304",
+            "status": "Active",
+            "text": "Software changes shall be assessed for verification impact."
+          }
+        },
+        {
+          "id": "REQ-GEN-007",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Post-market signals shall be linked to affected device models.",
+            "category": "Design Control",
+            "standard": "EU MDR PMS",
+            "status": "Active",
+            "text": "Post-market signals shall be linked to affected device models."
+          }
+        },
+        {
+          "id": "REQ-GEN-008",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Usability-related hazards shall be evaluated and mitigated.",
+            "category": "Design Control",
+            "standard": "IEC 62366-1",
+            "status": "Active",
+            "text": "Usability-related hazards shall be evaluated and mitigated."
+          }
+        },
+        {
+          "id": "REQ-GEN-009",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Supplied components shall be traceable to affected products.",
+            "category": "Design Control",
+            "standard": "ISO 13485",
+            "status": "Active",
+            "text": "Supplied components shall be traceable to affected products."
+          }
+        },
+        {
+          "id": "REQ-GEN-010",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Technical documentation shall include current objective evidence.",
+            "category": "Design Control",
+            "standard": "EU MDR Annex II",
+            "status": "Active",
+            "text": "Technical documentation shall include current objective evidence."
+          }
+        },
+        {
+          "id": "REQ-GEN-011",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Cybersecurity vulnerabilities shall be assessed for patient impact.",
+            "category": "Design Control",
+            "standard": "FDA Cybersecurity Guidance",
+            "status": "Active",
+            "text": "Cybersecurity vulnerabilities shall be assessed for patient impact."
+          }
+        },
+        {
+          "id": "REQ-GEN-012",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: The risk management file shall remain current through production and post-production.",
+            "category": "Design Control",
+            "standard": "ISO 14971",
+            "status": "Active",
+            "text": "The risk management file shall remain current through production and post-production."
+          }
+        },
+        {
+          "id": "REQ-REAL-008",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from bmjresp 2021 000939 supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "1 Harskamp RE, et al.",
+            "vector_ref_id": "EVID-d0d8a225b873"
+          }
+        },
+        {
+          "id": "REQ-REAL-009",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from K101012 supports the requirement.",
+            "standard": "21 CFR Part 820",
+            "status": "Active",
+            "text": "TaiDoc Technology Corportation DEC 15 210 Attachment C4 510(k) Summary 1.",
+            "vector_ref_id": "EVID-e75913d11135"
+          }
+        },
+        {
+          "id": "REQ-REAL-010",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from K232975 supports the requirement.",
+            "standard": "21 CFR Part 820",
+            "status": "Active",
+            "text": "U.S.",
+            "vector_ref_id": "EVID-597938d416c2"
+          }
+        },
+        {
+          "id": "REQ-REAL-011",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Miniaturized Pulse Oximeter Reference Design supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "User’s Guide and Test Report TIDA-00311 1 Miniaturized Pulse Oximeter Reference Design HealthTech ABSTRACT The scope of this document is to provide a miniaturized pulse oximeter reference design for high end clinical application.",
+            "vector_ref_id": "EVID-c56a1ebdac29"
+          }
+        },
+        {
+          "id": "REQ-REAL-012",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Pulse Oximeter Design and Manufacturing Guide supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Making of a Pulse Oximeter: • Pulse oximeters are relatively simple devices, but their creation still involves a fascinating blend of engineering, technology, and precision manufacturing.",
+            "vector_ref_id": "EVID-a8c481415db9"
+          }
+        },
+        {
+          "id": "REQ-REAL-013",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from 00001525B supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": " 2013-2015 Microchip Technology Inc.",
+            "vector_ref_id": "EVID-c5c55ab2bb13"
+          }
+        },
+        {
+          "id": "REQ-REAL-014",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Pulse Oximeter Demo Instructions supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Pulse Oximeter Demo Features:  This kit demonstrates the measurement of pulse and blood oxygen saturation using Microchip parts.",
+            "vector_ref_id": "EVID-19228c768e2e"
+          }
+        },
+        {
+          "id": "REQ-REAL-015",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from LCD   NHD 0216HZ FSW FBW 33V3C supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "N Ch NHD‐ 0216 HZ‐ F‐ SW‐ F‐ B‐ W‐ 33V3 C‐ NHD‐ aracter ‐ N 6‐ 2 M Tr Si FS O W 3‐ 3 Te R ‐021 r Liquid ewhaven Dis Lines x 16 Ch Model ransflective ide White LED STN (+) Optimal 6:00 V Wide Tempera .3 VDD, 3 Vol emperature C oHS Complia nhtech 6HZ Crysta play haracters D Backlight View ature t Backlight Compensatio nt Newh Ph: 8 h@newhaven ‐FSW l Displa n Circuit haven Disp 2511 Techno Elg 847‐844‐8795 www.new ndisplay.com W‐FB ay Modu play Intern ology Drive, S gin IL, 60124 5 Fax: 8 whavendis",
+            "vector_ref_id": "EVID-72d2d2898db2"
+          }
+        },
+        {
+          "id": "REQ-REAL-016",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from MPG PO PCB 1.PcbDoc supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Reporting Options File in Newer Format Date : 3/24/2015 Time : 9:45:42 AM Filename : X:\\USER FILES\\MPG Demo Files\\Demo Boards Layout Files - 3-16-2015\\Pulse Oximeter Rev D 2015-03\\MPG-PO-PCB-1.PcbDoc Version Warning Release 10 update 15 CAUTION - Support of Solder Mask and Paste Mask expansions for Tracks, Arcs, Fills and Regions was introduced.",
+            "vector_ref_id": "EVID-45fcddafcc81"
+          }
+        },
+        {
+          "id": "REQ-REAL-017",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Pulse Oximeter Schematics supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "1 1 2 2 3 3 4 4 D D C C B B A A Title Number RevisionSize A Date: 3/24/2015 Sheet of File: X:\\USER FILES\\..\\Sheet1.SchDoc Drawn By: Microchip Pulse Oximeter Demo Board Schematics DMPG-PO-SCH-1 Zhang Feng 1 MCP1640T-I/CHY GND2 VFB 4 VIN6 VOUT 5 EN3 SW1 U2 GND 10uF C1 10uF C2 976K, 1% R1 562K, 1% R2 GND GND GND GND Boost Regulator Microcontroller - dsPIC33FJ128GP802 VCC 3.3V AN0 AN1 PGC2 PGD2 RB0/DB0 OC2/RED RB1/DB1 RB2/DB2 RB3/DB3 RB4/DB4 RB5/DB5 RB6/DB6 RB7/DB7 SCL1 SDA1 OC1/IR RA2/RW RA3/RS RA4",
+            "vector_ref_id": "EVID-67d981012e28"
+          }
+        },
+        {
+          "id": "REQ-REAL-018",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Design Rule Check   MPG PO PCB 1 supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Design Rule Verification Report customize Design Rule Verification Report Date : 3/24/2015 Time : 9:24:04 AM Elapsed Time : 00:00:03 Filename : C:\\MICROCHIP_DESIGNS\\Demo Boards Layout Files\\Pulse Oximeter Rev C 2015-01\\MPG-PO-PCB-1.PcbDoc Warnings : 0 Rule Violations : 0 Summary Warnings Count Total 0 Rule Violations Count Clearance Constraint (Gap=7.874mil) ((IsTrack) or (InPadClass('All Pads'))),(HasFootprint('QFN-40_5x5','TQFP-100_14x14')) 0 Net Antennae (Tolerance=0mil) (All) 0 Silk to Silk ",
+            "vector_ref_id": "EVID-9c2d1732ed73"
+          }
+        },
+        {
+          "id": "REQ-REAL-019",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Status Report supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Output: Bill of Materials Type : BOM From : Variant [[No Variations]] of Project [Pulse Oximeter.PrjPcb] Files Generated : 0 Documents Printed : 0 Finished Output Generation At 1:36:04 PM On 11/3/2015",
+            "vector_ref_id": "EVID-360875f1816c"
+          }
+        },
+        {
+          "id": "REQ-REAL-020",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from readme supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "------------------------------------------------------------------------------------------ Gerber File Extension Report For: MPG-PO-PCB-1_REV_C.zip 30/01/2015 ------------------------------------------------------------------------------------------ see ./PDF/MPG-PO-PCB-1_Rev_C_Pulse_Oximeter.PDF final page for fabrication notes ------------------------------------------------------------------------------------------ Layer Extension Layer Description --------------------------------------------",
+            "vector_ref_id": "EVID-b3b307fa8c63"
+          }
+        },
+        {
+          "id": "REQ-REAL-021",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Status Report supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Output: ODB++ Files Type : ODB From : Variant [[No Variations]] of PCB Document [MPG-PO-PCB-1.PcbDoc] Generated File[matrix] Generated File[profile] Generated File[stephdr] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[features] Generated File[tools] Generated File[features] Generated File[features] Generated File[features] Gener",
+            "vector_ref_id": "EVID-5711ff420b0b"
+          }
+        },
+        {
+          "id": "REQ-REAL-022",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from MPG PO PCB 1 NonPlated supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "M48 ;Layer_Color=9474304 ;FILE_FORMAT=2:4 INCH,TZ ;TYPE=NON_PLATED T8F00S00C0.1300 % T08 X38800Y6800 X1200Y6800 X3335Y21525 X27154Y21525 X27154Y34005 X38800Y33800 X3335Y34005 X1200Y33800 M30",
+            "vector_ref_id": "EVID-96ddc45973a0"
+          }
+        },
+        {
+          "id": "REQ-REAL-023",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from MPG PO PCB 1 Plated supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "M48 ;Layer_Color=9474304 ;FILE_FORMAT=2:4 INCH,TZ ;TYPE=PLATED T1F00S00C0.0150 T2F00S00C0.0250 T3F00S00C0.0315 T4F00S00C0.0380 T5F00S00C0.0394 T6F00S00C0.0429 T7F00S00C0.1283 % T01 X5800Y6625 X6900Y8175 X4750Y10875 X2400Y17275 X5450Y19011 X5635Y20018 X14243Y19575 X13700Y16075 X15050Y14875 X16850Y16075 X17000Y17525 X19650Y17875 X19950Y18675 X21609Y19925 X22750Y19525 X23250Y20075 X23750Y17666 X22750Y15401 X22250Y13775 X21650Y13875 X23850Y13775 X24311Y12598 X23100Y12225 X16350Y12025 X14250Y12025 X1",
+            "vector_ref_id": "EVID-a4ae8a6fdfdd"
+          }
+        },
+        {
+          "id": "REQ-REAL-024",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from MPG PO PCB 1 Rev C Pulse Oximeter supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "4 1 1 5 1 3 2 2 5 3 4 2 5 6 2 4 1 5 1 12 1 1 43 1 876 1 11109 1 1 1 1413 16 1 3 4 611 6 9 67 1 10 1 3 1252 15 1 8 2 1 2 1 2 C C 2 1 2 1 2 1 2 43 1 2 1 2 1 987 2 1 2 16 13 2 1 17 12 19 10 20 9 22 7 24 5 25 4 27 2 28 1 1 1 8 56 234 1 1 1 2 1 1 12 B E 4 5 2 1 2 2 11 B E 7 6 10 9 2 2 1 2 12 6 2 4 1 1 3 2 12 12 2 2 12 1 2 1 2 106 2 1 2 21 3 1 1 22 8 1 1 1815 1114 1 1 2 2321 68 26 3 2 1 2 5 2 7 2 15 1 1 2 PABT101 PABT102 COBT1 PAC101PAC102 COC1 PAC201PAC202 COC2 PAC301 PAC302 COC3 PAC401 PAC402 COC4 P",
+            "vector_ref_id": "EVID-19772a689e69"
+          }
+        },
+        {
+          "id": "REQ-REAL-025",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from MPG PO PCB 1 Rev C Pulse Oximeter 3D View supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Requirement evidence extracted from MPG PO PCB 1 Rev C Pulse Oximeter 3D View",
+            "vector_ref_id": "EVID-1ab2c8ccd37c"
+          }
+        },
+        {
+          "id": "REQ-REAL-026",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from MPG PO SCH 1 REV C Pulse Oximeter supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "1 1 2 2 3 3 4 4 D D C C B B A A Title Number RevisionSize A Date: 3/24/2015 Sheet of File: C:\\MICROCHIP_DESIGNS\\..\\Sheet1.SchDocDrawn By: Microchip Pulse Oximeter Demo Board Schematics DMPG-PO-SCH-1 Zhang Feng 1 MCP1640T-I/CHY GND2 VFB 4 VIN6 VOUT 5 EN3 SW1 U2 GND 10uF C1 10uF C2 976K, 1% R1 562K, 1% R2 GND GND GND GND Boost Regulator Microcontroller - dsPIC33FJ128GP802 VCC 3.3V AN0 AN1 PGC2 PGD2 RB0/DB0 OC2/RED RB1/DB1 RB2/DB2 RB3/DB3 RB4/DB4 RB5/DB5 RB6/DB6 RB7/DB7 SCL1 SDA1 OC1/IR RA2/RW RA3/",
+            "vector_ref_id": "EVID-8cac73098380"
+          }
+        },
+        {
+          "id": "REQ-REAL-027",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Pick Place for MPG PO PCB 1 supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Designator | Footprint | Mid X | Mid Y | Ref X | Ref Y | Pad X | Pad Y | Layer | Rotation | Comment U1 | SOIC-SO28_N | 2400mil | 1653.367mil | 2400mil | 1653.367mil | 2725mil | 1832.501mil | T | 270.00 | DSPIC33FJ128GP802-I/SO R4 | Res_0603 | 2780mil | 1972.502mil | 2780mil | 2002.502mil | 2780mil | 2002.502mil | T | 270.00 | Res3 R3 | Res_0603 | 2725mil | 1972.502mil | 2725mil | 1942.502mil | 2725mil | 1942.502mil | T | 90.00 | Res3 C12 | CAP0603 | 2835mil | 1972.502mil | 2835mil | 2002.502mil ",
+            "vector_ref_id": "EVID-84a8cb1d0d03"
+          }
+        },
+        {
+          "id": "REQ-REAL-028",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from Pick Place for MPG PO PCB 1 supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Designator Footprint Mid X Mid Y Ref X Ref Y Pad X Pad Y TB Rotation Comment U1 SOIC-SO28_N 2400mil 1653.367mil 2400mil 1653.367mil 2725mil 1832.501mil T 270.00 DSPIC33FJ128GP802-I/SO R4 Res_0603 2780mil 1972.502mil 2780mil 2002.502mil 2780mil 2002.502mil T 270.00 Res3 R3 Res_0603 2725mil 1972.502mil 2725mil 1942.502mil 2725mil 1942.502mil T 90.00 Res3 C12 CAP0603 2835mil 1972.502mil 2835mil 2002.502mil 2835mil 2002.502mil T 270.00 Cap Semi C11 CAP0603 2730mil 1357.501mil 2730mil 1387.501mil 273",
+            "vector_ref_id": "EVID-76d870029d65"
+          }
+        },
+        {
+          "id": "REQ-REAL-029",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from pulse oximeters for medical purposes draft guidance 0.pdf supports the requirement.",
+            "standard": "Device design control",
+            "status": "Active",
+            "text": "Contains Nonbinding Recommendations Draft – Not for Implementation Pulse Oximeters for Medical Purposes - Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations Draft Guidance for Industry and Food and Drug Administration Staff DRAFT GUIDANCE This draft guidance document is being distributed for comment purposes only.",
+            "vector_ref_id": "EVID-eb9a3051e2bc"
+          }
+        },
+        {
+          "id": "REQ-REAL-030",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from The use and regulation of pulse oximeters (information for healthcare professionals)   GOV.UK supports the requirement.",
+            "standard": "ISO 80601-2-61",
+            "status": "Active",
+            "text": "Information for healthcare professionals on how pulse oximeters are regulated, home use and issues to look out for when using the devices From: Published Guidance The use and regulation of pulseoximeters (information for healthcareprofessionals) Medicines and Healthcare products Regulatory Agency (/government/organisations/medicines-and-healthcare-products-regulatory-agency) 26 March 2021 Pulse oximeters and why they are used Pulse oximetry is a well-established technique used in healthcare to t",
+            "vector_ref_id": "EVID-d698cf1c3b4a"
+          }
+        },
+        {
+          "id": "REQ-REAL-031",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from 21 CFR Part 820 (up to date as of 6 11 2026) supports the requirement.",
+            "standard": "21 CFR Part 820",
+            "status": "Active",
+            "text": "Title 21 —Food and Drugs Chapter I —Food and Drug Administration, Department of Health and Human Services Subchapter H —Medical Devices Part 820 Quality Management System Regulation Subpart A General Provisions § 820.1 Scope.",
+            "vector_ref_id": "EVID-a38e7dba462e"
+          }
+        },
+        {
+          "id": "REQ-REAL-032",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from eCFR   21 CFR Part 820   Quality Management System Regulation supports the requirement.",
+            "standard": "21 CFR Part 820",
+            "status": "Active",
+            "text": "eCFR :: 21 CFR Part 820 -- Quality Management System Regulation Site Feedback You are using an unsupported browser × You are using an unsupported browser.",
+            "vector_ref_id": "EVID-7bd9322e456c"
+          }
+        },
+        {
+          "id": "REQ-REAL-033",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from IMDRF GRRP WG N89 Reliance Playbook supports the requirement.",
+            "standard": "IMDRF",
+            "status": "Active",
+            "text": "Final Document IMDRF/GRRP WG/N89 FINAL: 2026 Playbook for Medical Device Regulatory Reliance Programs AUTHORING GROUP Good Regulatory Review Practices 02 February 2026 1 IMDRF/GRRP WG/N89 FINAL: 2026 Preface © Copyright 2026 by the International Medical Device Regulators Forum.",
+            "vector_ref_id": "EVID-6066aa97066f"
+          }
+        },
+        {
+          "id": "REQ-REAL-034",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Evidence from imdrf tech 200318 ae terminologies n43 supports the requirement.",
+            "standard": "IMDRF",
+            "status": "Active",
+            "text": "Title: IMDRF/AE WG/N43FINAL:2020 (Edition 4) IMDRF International Medical Device Regulators Forum FI NA L DOCUME N T IMDRF terminologies for categorized Adverse Event Reporting (AER): terms, terminology structure and codes Authoring Group: IMDRF Adverse Event Terminology Working Group Date: 18 March 2020 Dr Choong May Ling, Mimi, IMDRF Chair This document was produced by the International Medical Device Regulators Forum.",
+            "vector_ref_id": "EVID-f6dd2226c38d"
+          }
+        },
+        {
+          "id": "REQ-SPO2-001",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: SpO2 accuracy shall be within clinically acceptable limits across 70-100 percent saturation.",
+            "category": "Design Control",
+            "standard": "ISO 80601-2-61",
+            "status": "Active",
+            "text": "SpO2 accuracy shall be within clinically acceptable limits across 70-100 percent saturation."
+          }
+        },
+        {
+          "id": "REQ-SPO2-002",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Pulse rate measurement shall remain stable during low perfusion conditions.",
+            "category": "Design Control",
+            "standard": "ISO 80601-2-61",
+            "status": "Active",
+            "text": "Pulse rate measurement shall remain stable during low perfusion conditions."
+          }
+        },
+        {
+          "id": "REQ-SPO2-003",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Alarm behavior shall notify the user when saturation drops below configured thresholds.",
+            "category": "Design Control",
+            "standard": "IEC 60601-1-8",
+            "status": "Active",
+            "text": "Alarm behavior shall notify the user when saturation drops below configured thresholds."
+          }
+        },
+        {
+          "id": "REQ-SPO2-004",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: The sensor interface shall detect disconnected or degraded probes.",
+            "category": "Design Control",
+            "standard": "IEC 60601-1",
+            "status": "Active",
+            "text": "The sensor interface shall detect disconnected or degraded probes."
+          }
+        },
+        {
+          "id": "REQ-SPO2-005",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: The display shall present SpO2 and pulse rate readings without ambiguity.",
+            "category": "Design Control",
+            "standard": "IEC 62366-1",
+            "status": "Active",
+            "text": "The display shall present SpO2 and pulse rate readings without ambiguity."
+          }
+        },
+        {
+          "id": "REQ-SPO2-006",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: The device shall maintain operation on battery for the specified monitoring duration.",
+            "category": "Design Control",
+            "standard": "IEC 60601-1",
+            "status": "Active",
+            "text": "The device shall maintain operation on battery for the specified monitoring duration."
+          }
+        },
+        {
+          "id": "REQ-SPO2-007",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: The firmware shall reject invalid sensor packets and log communication errors.",
+            "category": "Design Control",
+            "standard": "IEC 62304",
+            "status": "Active",
+            "text": "The firmware shall reject invalid sensor packets and log communication errors."
+          }
+        },
+        {
+          "id": "REQ-SPO2-008",
+          "labels": [
+            "Requirement"
+          ],
+          "properties": {
+            "acceptance_criteria": "Objective evidence confirms: Cybersecurity controls shall protect update and configuration interfaces.",
+            "category": "Design Control",
+            "standard": "FDA Cybersecurity Guidance",
+            "status": "Active",
+            "text": "Cybersecurity controls shall protect update and configuration interfaces."
+          }
+        },
+        {
+          "id": "RISK-001",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Inaccurate SpO2 reading delays clinical intervention",
+            "mitigation": "Mitigation controls for inaccurate spo2 reading delays clinical intervention",
+            "probability": 2,
+            "risk_level": "Medium",
+            "severity": 3
+          }
+        },
+        {
+          "id": "RISK-002",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Low perfusion produces unstable pulse rate",
+            "mitigation": "Mitigation controls for low perfusion produces unstable pulse rate",
+            "probability": 3,
+            "risk_level": "High",
+            "severity": 4
+          }
+        },
+        {
+          "id": "RISK-003",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Alarm threshold misconfiguration",
+            "mitigation": "Mitigation controls for alarm threshold misconfiguration",
+            "probability": 4,
+            "risk_level": "High",
+            "severity": 5
+          }
+        },
+        {
+          "id": "RISK-004",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Probe disconnect not detected",
+            "mitigation": "Mitigation controls for probe disconnect not detected",
+            "probability": 5,
+            "risk_level": "Medium",
+            "severity": 2
+          }
+        },
+        {
+          "id": "RISK-005",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Battery depletion during monitoring",
+            "mitigation": "Mitigation controls for battery depletion during monitoring",
+            "probability": 1,
+            "risk_level": "Medium",
+            "severity": 3
+          }
+        },
+        {
+          "id": "RISK-006",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Firmware communication fault",
+            "mitigation": "Mitigation controls for firmware communication fault",
+            "probability": 2,
+            "risk_level": "Medium",
+            "severity": 4
+          }
+        },
+        {
+          "id": "RISK-007",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Display ambiguity causes user error",
+            "mitigation": "Mitigation controls for display ambiguity causes user error",
+            "probability": 3,
+            "risk_level": "High",
+            "severity": 5
+          }
+        },
+        {
+          "id": "RISK-008",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Cybersecurity update tampering",
+            "mitigation": "Mitigation controls for cybersecurity update tampering",
+            "probability": 4,
+            "risk_level": "Medium",
+            "severity": 2
+          }
+        },
+        {
+          "id": "RISK-009",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Post-market complaint recurrence",
+            "mitigation": "Mitigation controls for post-market complaint recurrence",
+            "probability": 5,
+            "risk_level": "High",
+            "severity": 3
+          }
+        },
+        {
+          "id": "RISK-010",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Supplier sensor material change",
+            "mitigation": "Mitigation controls for supplier sensor material change",
+            "probability": 1,
+            "risk_level": "Medium",
+            "severity": 4
+          }
+        },
+        {
+          "id": "RISK-REAL-035",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Preface © Copyright 2024 by the International Medical Device Regulators Forum.",
+            "mitigation": "Review source evidence and verify updated risk controls.",
+            "probability": 3,
+            "risk_level": "High",
+            "severity": 4,
+            "vector_ref_id": "EVID-d5a1fb2a75c6"
+          }
+        },
+        {
+          "id": "RISK-REAL-036",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "INTRODUCTION The COVID-19 pandemic saw a rapid increase in the use of pulse oximetry devices (PODs) in primary care to triage and monitor large numbers of patients and to help decide which patients required admission to hospital.",
+            "mitigation": "Review source evidence and verify updated risk controls.",
+            "probability": 3,
+            "risk_level": "High",
+            "severity": 4,
+            "vector_ref_id": "EVID-8ff17b7d3b4d"
+          }
+        },
+        {
+          "id": "RISK-REAL-037",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "© ISO 2019 Medical devices — Application of risk management to medical devices Dispositifs médicaux — Application de la gestion des risques aux dispositifs médicaux INTERNATIONAL STANDARD ISO 14971 Third edition 2019-12 Reference number ISO 14971:2019(E) Copyrighted material licensed to University of Iowa by Clarivate Analytics (US) LLC, subscriptions.techstreet.com, downloaded on 2019-12-29 06:51:38 +0000 by University of Iowa User.",
+            "mitigation": "Review source evidence and verify updated risk controls.",
+            "probability": 3,
+            "risk_level": "High",
+            "severity": 4,
+            "vector_ref_id": "EVID-72096434a02f"
+          }
+        },
+        {
+          "id": "RISK-REAL-038",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Pulse Oximeter Accuracy and Limitations: FDA Safety Communication | FirstWord HealthTech Opens in a new window Opens an external website Opens an external website in a new window <!---->Close this dialog<!----> This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, and marketing.",
+            "mitigation": "Review source evidence and verify updated risk controls.",
+            "probability": 3,
+            "risk_level": "High",
+            "severity": 4,
+            "vector_ref_id": "EVID-46cb920c5a06"
+          }
+        },
+        {
+          "id": "RISK-REAL-039",
+          "labels": [
+            "Risk"
+          ],
+          "properties": {
+            "hazard": "Pulse oximetry in primary care: factors affecting accuracy and interpretation - PMC Skip to main content An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States.",
+            "mitigation": "Review source evidence and verify updated risk controls.",
+            "probability": 3,
+            "risk_level": "High",
+            "severity": 4,
+            "vector_ref_id": "EVID-04dc30511e98"
+          }
+        },
+        {
+          "id": "SBOM-OPENSSL",
+          "labels": [
+            "SBOM_Component"
+          ],
+          "properties": {
+            "name": "OpenSSL",
+            "package_type": "library",
+            "version": "3.0.x"
+          }
+        },
+        {
+          "id": "SBOM-REAL-005",
+          "labels": [
+            "SBOM_Component"
+          ],
+          "properties": {
+            "name": "GitHub   GliaX oximeter  Open Source DIY Pulse Oximeter Using Arduino · GitHub",
+            "package_type": "software/cybersecurity evidence",
+            "vector_ref_id": "EVID-20e033e68563",
+            "version": "unknown"
+          }
+        },
+        {
+          "id": "SBOM-REAL-006",
+          "labels": [
+            "SBOM_Component"
+          ],
+          "properties": {
+            "name": "Open Source Pulse Oximeter for COVID 19   Hackster.io",
+            "package_type": "software/cybersecurity evidence",
+            "vector_ref_id": "EVID-517d740d64ff",
+            "version": "unknown"
+          }
+        },
+        {
+          "id": "SBOM-REAL-007",
+          "labels": [
+            "SBOM_Component"
+          ],
+          "properties": {
+            "name": "Premarket Cybersecurity Guidance 2026",
+            "package_type": "software/cybersecurity evidence",
+            "vector_ref_id": "EVID-a307564e0649",
+            "version": "unknown"
+          }
+        },
+        {
+          "id": "TEST-011",
+          "labels": [
+            "Test"
+          ],
+          "properties": {
+            "acceptance_criteria_met": true,
+            "date": "2026-06-21",
+            "firmware_tested": "v3.4",
+            "method": "Protocol-driven verification",
+            "name": "Verification Test 011",
+            "result": "Pass"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "COMP-BATTERY",
+          "type": "HAS_COMPONENT",
+          "properties": {
+            "rationale": "Device bill of materials"
+          }
+        },
+        {
+          "source": "COMP-BATTERY",
+          "target": "REQ-GEN-003",
+          "type": "AFFECTS",
+          "properties": {
+            "rationale": "Component affects requirement"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "FW-v2.1",
+          "type": "HAS_VERSION",
+          "properties": {
+            "current": false,
+            "rationale": "Device firmware history"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "FW-v3.4",
+          "type": "HAS_VERSION",
+          "properties": {
+            "current": true,
+            "rationale": "Device firmware history"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "FW-v3.5",
+          "type": "HAS_VERSION",
+          "properties": {
+            "current": false,
+            "rationale": "What-if firmware candidate"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-4065a8d6154b",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "CMP-REAL-001",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Complaint or post-market record from upload"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-8765b82dd59e",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "CMP-REAL-002",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Complaint or post-market record from upload"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-c40f8cf7e07b",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "CMP-REAL-003",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Complaint or post-market record from upload"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-c55113260c0f",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "CMP-REAL-004",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Complaint or post-market record from upload"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-20e033e68563",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "SBOM-REAL-005",
+          "target": "DEV-PULSE-OX",
+          "type": "AFFECTS_COMPONENT_IN",
+          "properties": {
+            "rationale": "Cybersecurity artifact from upload"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-517d740d64ff",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "SBOM-REAL-006",
+          "target": "DEV-PULSE-OX",
+          "type": "AFFECTS_COMPONENT_IN",
+          "properties": {
+            "rationale": "Cybersecurity artifact from upload"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-a307564e0649",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "SBOM-REAL-007",
+          "target": "DEV-PULSE-OX",
+          "type": "AFFECTS_COMPONENT_IN",
+          "properties": {
+            "rationale": "Cybersecurity artifact from upload"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-d0d8a225b873",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-008",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-e75913d11135",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-009",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-597938d416c2",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-010",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-c56a1ebdac29",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-011",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-a8c481415db9",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-012",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-c5c55ab2bb13",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-013",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-19228c768e2e",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-014",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-72d2d2898db2",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-015",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-45fcddafcc81",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-016",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-67d981012e28",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-017",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-9c2d1732ed73",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-018",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-360875f1816c",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-019",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-b3b307fa8c63",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-020",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-5711ff420b0b",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-021",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-96ddc45973a0",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-022",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-a4ae8a6fdfdd",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-023",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-19772a689e69",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-024",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-1ab2c8ccd37c",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-025",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-8cac73098380",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-026",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-84a8cb1d0d03",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-027",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-76d870029d65",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-028",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-eb9a3051e2bc",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-029",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-d698cf1c3b4a",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-030",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-a38e7dba462e",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-031",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-7bd9322e456c",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-032",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-6066aa97066f",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-033",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-f6dd2226c38d",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-REAL-034",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Requirement extracted from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-d5a1fb2a75c6",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-REAL-035",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk evidence from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-8ff17b7d3b4d",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-REAL-036",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk evidence from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-72096434a02f",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-REAL-037",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk evidence from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-46cb920c5a06",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-REAL-038",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk evidence from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "EVID-04dc30511e98",
+          "type": "HAS_DOCUMENT",
+          "properties": {
+            "rationale": "Uploaded device evidence"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-REAL-039",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk evidence from uploaded corpus"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-001",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-002",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-003",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-004",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-005",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-006",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-007",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-SPO2-008",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-001",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-002",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-003",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-004",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-005",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-006",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-007",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-008",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-009",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-010",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-011",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "REQ-GEN-012",
+          "type": "CONTAINS",
+          "properties": {
+            "rationale": "Device design input scope"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-001",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-002",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-003",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-004",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-005",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-006",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-007",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-008",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-009",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "RISK-010",
+          "type": "HAS_RISK",
+          "properties": {
+            "rationale": "Risk management file"
+          }
+        },
+        {
+          "source": "REQ-GEN-003",
+          "target": "TEST-011",
+          "type": "VERIFIED_BY",
+          "properties": {
+            "rationale": "Traceability matrix"
+          }
+        },
+        {
+          "source": "CMP-001",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-002",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-003",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-004",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-005",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-006",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-007",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-008",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-009",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-010",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-011",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-012",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-013",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-014",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "CMP-015",
+          "target": "DEV-PULSE-OX",
+          "type": "REPORTED_ON",
+          "properties": {
+            "rationale": "Post-market surveillance"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "COMP-SENSOR",
+          "type": "HAS_COMPONENT",
+          "properties": {
+            "rationale": "Device bill of materials"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "COMP-MCU",
+          "type": "HAS_COMPONENT",
+          "properties": {
+            "rationale": "Device bill of materials"
+          }
+        },
+        {
+          "source": "DEV-PULSE-OX",
+          "target": "COMP-FIRMWARE",
+          "type": "HAS_COMPONENT",
+          "properties": {
+            "rationale": "Device bill of materials"
+          }
+        },
+        {
+          "source": "SBOM-OPENSSL",
+          "target": "DEV-PULSE-OX",
+          "type": "AFFECTS_COMPONENT_IN",
+          "properties": {
+            "rationale": "SBOM package used by device"
+          }
+        },
+        {
+          "source": "CVE-2026-DEMO",
+          "target": "DEV-PULSE-OX",
+          "type": "AFFECTS_COMPONENT_IN",
+          "properties": {
+            "rationale": "Cybersecurity watchlist"
+          }
+        }
+      ]
+    }
+  },
+  "hypotheses": [
+    {
+      "id": "HYP-001",
+      "title": "Battery Pack verification gap",
+      "description": "The complaint symptom may be caused by insufficient verification coverage for Battery Pack.",
+      "affected_component": "COMP-BATTERY",
+      "base_probability": 0.42,
+      "why_chain": [
+        "Complaint indicates a device behavior gap.",
+        "The affected component maps to Battery Pack.",
+        "The graph may contain stale or missing verification evidence.",
+        "A stale verification path can let current-firmware behavior escape validation.",
+        "Therefore the primary hypothesis is traceability decay after change."
+      ],
+      "citation": "[Source: M2 deterministic reasoning, Confidence: 0.78]"
+    },
+    {
+      "id": "HYP-002",
+      "title": "Battery Pack risk control drift",
+      "description": "The risk control linked to Battery Pack may no longer reduce the observed hazard adequately.",
+      "affected_component": "COMP-BATTERY",
+      "base_probability": 0.33,
+      "why_chain": [
+        "Complaint severity suggests a patient-impacting hazard.",
+        "Risk controls must remain effective through production and post-market data.",
+        "Post-market recurrence can indicate risk control drift."
+      ],
+      "citation": "[Source: M2 deterministic reasoning, Confidence: 0.78]"
+    },
+    {
+      "id": "HYP-003",
+      "title": "User-facing evidence or labeling weakness",
+      "description": "The complaint may reflect insufficient labeling, alarm handling, or user-facing verification evidence.",
+      "affected_component": "COMP-BATTERY",
+      "base_probability": 0.25,
+      "why_chain": [
+        "Several complaint classes involve user interpretation.",
+        "Usability and labeling evidence must be connected to design requirements.",
+        "Weak objective evidence can create a CAPA-triggering documentation gap."
+      ],
+      "citation": "[Source: M2 deterministic reasoning, Confidence: 0.78]"
+    }
+  ],
+  "evidence_collected": [],
+  "risk_assessment": null,
+  "capa_sections": [],
+  "capa_draft": "",
+  "audit_findings": [],
+  "trace_decay_alerts": [],
+  "status": "root_causes_generated",
+  "errors": [],
+  "trace": [
+    {
+      "timestamp": "2026-06-25T12:09:18.635324Z",
+      "agent": "supervisor",
+      "action": "route to complaint_intake",
+      "status": "info",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-06-25T12:09:18.635324Z",
+      "agent": "complaint_intake",
+      "action": "extract structured complaint",
+      "status": "started",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-06-25T12:09:18.643379Z",
+      "agent": "complaint_intake",
+      "action": "extract structured complaint",
+      "status": "completed",
+      "data": {
+        "elapsed_ms": 7.59
+      }
+    },
+    {
+      "timestamp": "2026-06-25T12:09:18.649190Z",
+      "agent": "supervisor",
+      "action": "route to root_cause",
+      "status": "info",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-06-25T12:09:18.649190Z",
+      "agent": "root_cause",
+      "action": "generate three 5-whys hypotheses",
+      "status": "started",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-06-25T12:09:18.655197Z",
+      "agent": "root_cause",
+      "action": "generate three 5-whys hypotheses",
+      "status": "completed",
+      "data": {
+        "elapsed_ms": 6.02
+      }
+    }
+  ]
+}

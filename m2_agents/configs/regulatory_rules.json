@@ -1,0 +1,17 @@
+{
+  "FDA_21_CFR_820": {
+    "label": "FDA 21 CFR Part 820",
+    "focus": "Design controls, CAPA, complaint handling, objective evidence, DMR/DHF traceability",
+    "default_reference": "21 CFR 820.30(g)"
+  },
+  "ISO_13485": {
+    "label": "ISO 13485",
+    "focus": "Quality management system processes, complaint handling, corrective action, traceability",
+    "default_reference": "ISO 13485:2016 Sections 7.3 and 8.5"
+  },
+  "EU_MDR": {
+    "label": "EU MDR",
+    "focus": "GSPR, technical documentation, PMS, vigilance, PMCF evidence",
+    "default_reference": "EU MDR Annex II and Annex I"
+  }
+}

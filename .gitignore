@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+uvicorn.out.log
+uvicorn.err.log
+.env.*
+overall.md
+res.json
+res2.json
+schema_readme.md
+scripts/
+tmp/
+update_m1.md
+updated_m2.md
+
+MEDTRACE_AI_COMPLETE_PROJECT_DOCUMENTATION.md
+MEDTRACE_BACKEND_FIXES_COMPLETE_REPORT.md
+MedTraceAI_Current_Project_Problems_and_Rebuild_Plan.md
+README.md
+apicheck.py
+day plan.md
+m2_readme.md
